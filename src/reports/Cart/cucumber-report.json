@@ -1,51 +1,330 @@
 [
   {
-    "description": "",
+    "description": "   Description: This feature will test the get user cart endpoint.",
     "elements": [
       {
         "description": "",
-        "id": "get-user-cart;get-cart-by-user",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
-        "line": 11,
-        "name": "Get cart by user",
+        "line": 13,
+        "name": "Lấy giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I have the client ID \"client123\" and authorization \"Bearer token1\"",
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 45750699
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              }
+            ]
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I request the cart for the user",
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 48429300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response status should be 200",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 4864000
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDIwMA==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3333599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2382799
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxNDExOTA4YjU5NGI1OTQ2OTllNjZmIiwKICAidXNlcklkIjogIjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTE5VDIwOjA3OjQ0LjI4NVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yMFQwODo0OToxNC41MjZaIiwKICAiX192IjogNQp9Cg==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3349100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3041299
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNjQgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19308200
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18039899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1132499
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDIwMA==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 594399
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxNDExOTA4YjU5NGI1OTQ2OTllNjZmIiwKICAidXNlcklkIjogIjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTE5VDIwOjA3OjQ0LjI4NVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yMFQwODo0OToxNC41MjZaIiwKICAiX192IjogNQp9Cg==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 795200
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjIgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5214899
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMga2jDtG5nIHRow6BuaCBjw7RuZyIsIjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsIm51bGwiLDUwMF0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7691000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7411299,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +500\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:49:37)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the response should contain the cart details",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -53,9 +332,38 @@
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the response should match the structure of the JSON",
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "skipped",
               "duration": 0
             }
           }
@@ -65,100 +373,295 @@
       },
       {
         "description": "",
-        "id": "get-user-cart;get-cart-by-user",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
-        "line": 12,
-        "name": "Get cart by user",
+        "line": 16,
+        "name": "Lấy giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I have the client ID \"client456\" and authorization \"Bearer token2\"",
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 4822700
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              }
+            ]
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I request the cart for the user",
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 23943199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response status should be 403",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 454700
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDIwMA==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the response should contain the cart details",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 140499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the response should match the structure of the JSON",
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 145899
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxNDExOTA4YjU5NGI1OTQ2OTllNjZmIiwKICAidXNlcklkIjogIjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTE5VDIwOjA3OjQ0LjI4NVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yMFQwODo0OToxNC41MjZaIiwKICAiX192IjogNQp9Cg==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 463599
             }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235200
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjYgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
         "type": "scenario"
-      }
-    ],
-    "id": "get-user-cart",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Get User Cart",
-    "tags": [],
-    "uri": "src\\tests\\features\\Cart\\cart_feature_data.feature"
-  },
-  {
-    "description": "",
-    "elements": [
+      },
       {
         "description": "",
-        "id": "get-user-cart;get-cart-by-user",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
-        "line": 12,
-        "name": "Get cart by user",
+        "line": 17,
+        "name": "Lấy giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I have the client ID \"<EXCEL_DATA>\" and authorization \"\"",
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 3820900
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12119599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 526800
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV4WlRNMll6SmlNVGt3WlRZMll6ZzVZV1V5TURJaUxDSmxiV0ZwYkNJNkltNW5kWGxsYm5aaGJuQm9kUzVvZFdacFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3lPVFF6T0RZM05pd2laWGh3SWpveE56WXdPVGsyTWpjMmZRLnhUR3k0cmpxZGQwT2hNa2VIRFlYMFF2UXM0RWJEQmlZbnVjZngxNW1nZFkiLDIwMF0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDIwMA==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156899
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxNDExOTA4YjU5NGI1OTQ2OTllNjZmIiwKICAidXNlcklkIjogIjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTE5VDIwOjA3OjQ0LjI4NVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yMFQwODo0OToxNC41MjZaIiwKICAiX192IjogNQp9Cg==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 483799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175199
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTQgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Users\" ở hàng \"7\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4390700,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Users hàng 7\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:28:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I request the cart for the user",
+            "name": "Tôi gửi yêu cầu GET đến \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:32"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -166,9 +669,12 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response status should be ",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"7\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:46"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -176,9 +682,12 @@
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the response should contain the cart details",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:55"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -186,9 +695,38 @@
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the response should match the structure of the JSON",
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:61"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"800\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:83"
+            },
+            "result": {
+              "status": "skipped",
               "duration": 0
             }
           }
@@ -202,6 +740,6 @@
     "keyword": "Feature",
     "name": "Get User Cart",
     "tags": [],
-    "uri": "src\\tests\\features\\Cart\\cart_feature_xlsx.feature"
+    "uri": "src\\tests\\features\\Cart\\cart_feature.feature"
   }
 ]
