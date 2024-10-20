@@ -3,7 +3,14 @@
    "version": "1.0.0",
    "main": "index.js",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "auth": "cucumber-js --config src/configs/config.auth.js ",
+      "rauth": "node \"src/reports/Auth/cucumber.report.js\"",
+      "product": "cucumber-js --config src/configs/cucumberConfig.js",
+      "rproduct": "node \"src/reports/cucumber.report.js\"",
+      "cart": "cucumber-js --config src/configs/config.cart.js",
+      "rcart": "node \"src/reports/Cart/cucumber.report.js\"",
+      "checkout": "cucumber-js --config src/configs/config.checkout.js",
+      "rcheckout": "node \"src/reports/Checkout/cucumber.report.js\""
    },
    "keywords": [
       "testing",
@@ -18,9 +25,10 @@
    "description": "",
    "dependencies": {
       "@cucumber/cucumber": "^11.0.1",
-      "chai": "^5.1.1",
-      "chai-http": "^5.1.1",
-      "mocha": "^10.7.3",
-      "selenium-webdriver": "^4.25.0"
+      "chai": "^4.2.0",
+      "chai-http": "^4.2.0",
+      "cucumber-html-reporter": "^7.2.0",
+      "selenium-webdriver": "^4.25.0",
+      "xlsx": "^0.18.5"
    }
 }
