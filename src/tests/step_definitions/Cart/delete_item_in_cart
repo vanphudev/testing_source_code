@@ -1,0 +1,71 @@
+const { Given, When, Then } = require('@cucumber/cucumber');
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const XLSX = require('xlsx'); // Nhớ import XLSX
+const expect = chai.expect;
+chai.use(chaiHttp);
+
+const file_name = "E:\\Nam4\\KDPM\\Book1.xlsx";
+const server = "http://localhost:5555";
+
+// Load Excel data
+function getDataFromExcel(sheetName, row) {
+    const workbook = XLSX.readFile(file_name);
+    const sheet = workbook.Sheets[sheetName];
+    const data = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    return data[row];
+}
+
+// Step to load data from Excel
+Given('Tôi đã có dữ liệu người dùng {string} ở hàng {string}', async function (sheet, row) {
+    this.userData = await getDataFromExcel(sheet, row);
+    if (this.userData) {
+        this.client_id = this.userData[1];
+        this.authorization = this.userData[2];
+        this.expected_status = this.userData[4];
+        this.productId = this.userData[3];
+        this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.userData), "application/json");
+    } else {
+        throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheet} hàng ${row}`);
+    }
+});
+
+// Gửi yêu cầu DELETE
+When('Tôi muốn gửi yêu cầu DELETE đến "/api/v1/carts/removeitem" với dữ liệu', function (done) {
+    chai.request(server)
+        .delete('/api/v1/carts/removeitem')
+        .set('client_id', this.client_id) // Sửa lại để lấy từ this.client_id
+        .set('authorization', this.authorization)
+        .send({
+            productId: this.productId,
+        })
+        .end((err, res) => {
+            if (err) {
+                return done(err);
+            }
+            this.response = res; // Gán response vào this.response
+            done();
+        });
+});
+
+// Kiểm tra trạng thái phản hồi
+Then('Tôi nhận được trạng thái phản hồi với expected_status từ {string} ở hàng {string}', function (sheet, row) {
+    expect(this.response).to.have.status(parseInt(this.expected_status)); // Sửa lại để sử dụng this.expected_status
+});
+
+// Kiểm tra thông báo thành công
+Then('Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công', function () {
+    if (this.response.status === 200) {
+        expect(this.response.body.message).to.equal('Item removed successfully');
+    }
+});
+
+// Kiểm tra định dạng dữ liệu
+Then('Tôi kiểm tra dữ liệu có đúng với định dạng JSON', function () {
+    expect(this.response).to.be.json;
+});
+
+// Kiểm tra thời gian phản hồi
+Then('Tôi kiểm tra mỗi Request chỉ chấp nhận trong thời gian {int} milliseconds', function (time) {
+    expect(this.response.responseTime).to.be.below(time);
+});
