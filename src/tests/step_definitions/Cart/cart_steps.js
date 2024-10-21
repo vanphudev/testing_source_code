@@ -14,16 +14,21 @@ const server = "http://localhost:5555";
 async function readDataFromExcel(sheetName, rowIndex) {
    const workbook = await xlsx.readFile(file_name);
    const sheet = workbook.Sheets[sheetName];
+
+   // const data = xlsx.utils.sheet_to_json(sheet, { header: 1 });
+   // return data[rowIndex];
+
    const data = xlsx.utils.sheet_to_json(sheet, { header: 1 });
-   return data[rowIndex];
+   return data[rowIndex - 1];
+
 }
 
 Given("Tôi có dữ liệu người dùng từ {string} hàng {string}", async function (sheetName, rowIndex) {
    this.rowData = await readDataFromExcel(sheetName, rowIndex);
    if (this.rowData) {
-      this.client_id = this.rowData[1];
-      this.authorization = this.rowData[2];
-      this.expected_status = this.rowData[3];
+      this.client_id = this.rowData[1] === "null" ? null : this.rowData[1];
+      this.authorization = this.rowData[2] === "null" ? null : this.rowData[2];
+      this.expected_status = this.rowData[3] === "null" ? null : this.rowData[3];
       this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
    } else {
       throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);

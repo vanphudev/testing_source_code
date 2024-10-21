@@ -11,8 +11,7 @@ Feature: Get User Cart
       And Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian "<time>" milliseconds
       Examples:
          | sheet | row | time |
-         | Users | 1  | 1800  |
-         | Users | 2  | 1800  |
-         | Users | 3  | 1800  |
+         | Users | 1   | 1800 |
+         | Users | 2   | 1800 |
+         | Users | 3   | 1800 |
 
-   

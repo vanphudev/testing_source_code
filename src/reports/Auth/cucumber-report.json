@@ -1,0 +1,1843 @@
+[
+  {
+    "description": "  Description: This feature will test the signup endpoint.",
+    "elements": [
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"1\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51499300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 41303099,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"1\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16129000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6274400,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33554700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3497099,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38245100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8506499,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22892299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8039400,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25741099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5241299,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"7\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20023699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3514300,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"7\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"8\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19668799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4960299,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"8\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"9\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13095700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2576199,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"9\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"10\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11508499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8549700,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"10\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"11\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13690200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2815299,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"11\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"12\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17901299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2812699,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"12\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"13\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16397199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10863399,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"13\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"14\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23910999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6518499,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"14\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"15\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22580499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5071400,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"15\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"16\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13582200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3163100,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"16\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"17\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16388500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3399899,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"17\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"18\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17781300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6287000,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"18\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"19\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36602699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2800099,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"19\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"20\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15910700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4837899,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"20\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 32,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"21\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15127999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2947200,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"21\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 33,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"22\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16192000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8915099,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"22\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"23\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16980699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2814300,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"23\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"24\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17849600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1834399,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"24\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 36,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"25\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12840599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2609699,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"25\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 37,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"26\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14636400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2608899,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"26\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 38,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"27\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14593699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2648699,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"27\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 39,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"28\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14350899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5354000,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"28\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"29\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15706699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 52464799,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"29\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-user;đăng-ký-tài-khoản-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 41,
+        "name": "Đăng ký tài khoản người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu người dùng từ \"signup\" ở hàng \"30\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38709599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/user/signup\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6147699,
+              "error_message": "Error [ERR_STREAM_WRITE_AFTER_END]: write after end\n    at ClientRequest.end (node:_http_outgoing:1043:15)\n    at Request._end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:1021:9)\n    at Request.end (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:777:15)\n    at D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (D:\\code\\DoAnKDPM\\pull_Moi\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"signup\" ở hàng \"30\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Auth\\signup.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra thời gian phản hồi không quá \"50\" milliseconds",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "signup-user",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Signup User",
+    "tags": [],
+    "uri": "src\\tests\\features\\Auth\\signup.feature"
+  }
+]
