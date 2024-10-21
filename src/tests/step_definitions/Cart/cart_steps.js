@@ -8,21 +8,20 @@ chai.use(chaiHttp);
 let startTime;
 const file_name = "F:\\data_testing\\input_data.xlsx";
 const server = "http://localhost:5555";
-const path = require("path");
 
 async function readDataFromExcel(sheetName, rowIndex) {
    const workbook = await xlsx.readFile(file_name);
    const sheet = workbook.Sheets[sheetName];
    const data = xlsx.utils.sheet_to_json(sheet, {header: 1});
-   return data[rowIndex];
+   return data[rowIndex - 1];
 }
 
 Given("Tôi có dữ liệu người dùng từ {string} ở hàng {string}", async function (sheetName, rowIndex) {
    this.rowData = await readDataFromExcel(sheetName, rowIndex);
    if (this.rowData) {
-      this.client_id = this.rowData[1];
-      this.authorization = this.rowData[2];
-      this.expected_status = this.rowData[3];
+      this.client_id = this.rowData[1] === "null" ? null : this.rowData[1];
+      this.authorization = this.rowData[2] === "null" ? null : this.rowData[2];
+      this.expected_status = this.rowData[3] === "null" ? null : this.rowData[3];
       this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
    } else {
       throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);
@@ -67,7 +66,7 @@ Then("Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạn
 
 Then("Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng", function () {
    if (this.response.status === 200) {
-      const cart = this.response.body.data.cart; 
+      const cart = this.response.body.data.cart;
       const totalItems = this.response.body.data.totalItems;
       expect(cart).to.have.property("_id");
       expect(cart).to.have.property("userId");
