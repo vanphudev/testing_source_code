@@ -67,7 +67,7 @@ Then("Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạn
 
 Then("Tôi sẽ kiểm tra các trường thông tin của giỏ hàng của người dùng", function () {
    if (this.response.status === 200) {
-      const cart = this.response.body.data.cart;
+      const cart = this.response.body.data.cart; 
       const totalItems = this.response.body.data.totalItems;
       expect(cart).to.have.property("_id");
       expect(cart).to.have.property("userId");

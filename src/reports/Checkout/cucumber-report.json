@@ -1,0 +1,411 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "kiem-tra-api-checkout-voi-cac-buoc-thanh-toan;khong-xac-thuc-duoc-nguoi-dung",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Khong xac thuc duoc nguoi dung",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"checkout_test1\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90742299
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJOZ8aw4budaSBkw7luZyBraMO0bmcgeMOhYyB0aOG7sWMgxJHGsOG7o2MgZG8gYXV0aG9yaXphdGlvbiBraMO0bmcgaOG7o3AgbOG7hyIsIjY3MTNiNTQ3YWRjYjI3M2IwYzE5ZjkyMCIsImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFellqVTBOMkZrWTJJeU56TmlNR014T1dZNU1EUWlMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVROQVoyMWhhV3d1WTI5dElpd2lhV0YwSWpveE56STVOREUwT0RnMUxDSmxlSEFpT2pFM05qQTVOekkwT0RWOS5wckw5UVEtY2gwY3BCVFl4ZF84TzJWbDg1Uk9HMlN3emlaUDFuSldPeHh4eCIsNDA1XQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/orders/create\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86779399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"checkout_test1\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5024039399,
+              "error_message": "Error: function timed out, ensure the callback is executed within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\KDPM\\DoAnn\\testing_source_code\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)"
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJOZ8aw4budaSBkw7luZyBraMO0bmcgeMOhYyB0aOG7sWMgxJHGsOG7o2MgZG8gYXV0aG9yaXphdGlvbiBraMO0bmcgaOG7o3AgbOG7hyIsIjY3MTNiNTQ3YWRjYjI3M2IwYzE5ZjkyMCIsImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFellqVTBOMkZrWTJJeU56TmlNR014T1dZNU1EUWlMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVROQVoyMWhhV3d1WTI5dElpd2lhV0YwSWpveE56STVOREUwT0RnMUxDSmxlSEFpT2pFM05qQTVOekkwT0RWOS5wckw5UVEtY2gwY3BCVFl4ZF84TzJWbDg1Uk9HMlN3emlaUDFuSldPeHh4eCIsNDA1XQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNQ==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 405, thì tôi sẽ không được phép thanh toán và yêu cầu đăng nhập lại",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "kiem-tra-api-checkout-voi-cac-buoc-thanh-toan;khong-xac-thuc-duoc-nguoi-dung",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Khong xac thuc duoc nguoi dung",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"checkout_test1\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61821200
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJOZ8aw4budaSBkw7luZyBraMO0bmcgeMOhYyB0aOG7sWMgxJHGsOG7o2MgZG8gY2xpZW50X2lkIGtow7RuZyBjw7MiLCJudWxsIiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV6WWpVME4yRmtZMkl5TnpOaU1HTXhPV1k1TURRaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVE5BWjIxaGFXd3VZMjl0SWl3aWFXRjBJam94TnpJNU5ERTBPRGcxTENKbGVIQWlPakUzTmpBNU56STBPRFY5LnByTDlRUS1jaDBjcEJUWXhkXzhPMlZsODVST0cyU3d6aVpQMW5KV09aaTIzIiw0MDVd",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/orders/create\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17238400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"checkout_test1\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 22504500,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +405\n\n    at World.<anonymous> (D:\\KDPM\\DoAnn\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:47:34)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 405, thì tôi sẽ không được phép thanh toán và yêu cầu đăng nhập lại",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "kiem-tra-api-checkout-voi-cac-buoc-thanh-toan;khong-xac-thuc-duoc-nguoi-dung",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Khong xac thuc duoc nguoi dung",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"checkout_test1\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37966999
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJOZ8aw4budaSBkw7luZyBraMO0bmcgeMOhYyB0aOG7sWMgxJHGsOG7o2MgZG8gYXV0aG9yaXphdGlvbiBraMO0bmcgY8OzIiwiNjcxM2I1NDdhZGNiMjczYjBjMTlmOTIwIiwibnVsbCIsNDA1XQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/orders/create\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16921299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"checkout_test1\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5007697400,
+              "error_message": "Error: function timed out, ensure the callback is executed within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\KDPM\\DoAnn\\testing_source_code\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)"
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJOZ8aw4budaSBkw7luZyBraMO0bmcgeMOhYyB0aOG7sWMgxJHGsOG7o2MgZG8gYXV0aG9yaXphdGlvbiBraMO0bmcgY8OzIiwiNjcxM2I1NDdhZGNiMjczYjBjMTlmOTIwIiwibnVsbCIsNDA1XQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNQ==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 405, thì tôi sẽ không được phép thanh toán và yêu cầu đăng nhập lại",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "kiem-tra-api-checkout-voi-cac-buoc-thanh-toan;khong-xac-thuc-duoc-nguoi-dung",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Khong xac thuc duoc nguoi dung",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"checkout_test1\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 44696700,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet checkout_test1 hàng 5\n    at World.<anonymous> (D:\\KDPM\\DoAnn\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:27:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/orders/create\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"checkout_test1\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi là 405, thì tôi sẽ không được phép thanh toán và yêu cầu đăng nhập lại",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Dữ liệu trả về có đúng với định dạng JSON",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "kiem-tra-api-checkout-voi-cac-buoc-thanh-toan",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Kiem tra API checkout voi cac buoc thanh toan",
+    "tags": [],
+    "uri": "src\\tests\\features\\Checkout\\checkout.feature"
+  }
+]
