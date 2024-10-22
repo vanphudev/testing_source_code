@@ -1,156 +1,75 @@
-// var { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor');
+const {Given, When, Then} = require("@cucumber/cucumber");
+const chai = require("chai");
+const chaiHttp = require("chai-http");
+const xlsx = require("xlsx");
+const expect = chai.expect;
+require("dotenv").config();
+chai.use(chaiHttp);
 
-// let apiEndpoint;
-// let clientId;
-// let authorization;
-// let requestBody = {};
-// let responseStatus;
-// let responseBody;
+let startTime;
+const file_name = process.env.FILE_NAME_CHECKOUT;
+const server = process.env.SERVER;
 
-// // [Given] Sets up the initial state of the system.
-// Given(`API endpoint {string}`, (endpoint) => {
-//     apiEndpoint = endpoint;
-// });
+async function readDataFromExcel(sheetName, rowIndex) {
+   const workbook = await xlsx.readFile(file_name);
+   const sheet = workbook.Sheets[sheetName];
+   const data = xlsx.utils.sheet_to_json(sheet);
+   console.log(data);
+   return data[rowIndex];
+}
 
-// Given(`client_id la {string}`, (id) => {
-//     clientId = id;
-// });
+Given("Tôi có dữ liệu người dùng từ {string} ở hàng {string}", async function (sheetName, rowIndex) {
+   this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
+   console.log(this.rowData);
+   if (this.rowData) {
+      this.client_id = this.rowData.Client_id === "null" ? null : this.rowData.Client_id;
+      this.authorization = this.rowData.Authorization === "null" ? null : this.rowData.Authorization;
+      this.expected_status = this.rowData.expected_status === "null" ? null : this.rowData.expected_status;
+      this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
+   } else {
+      throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);
+   }
+});
 
-// Given(`authorization la {string}`, (auth) => {
-//     authorization = auth;
-// });
+When("Tôi gửi yêu cầu POST đến {string}", async function (endpoint) {
+   startTime = new Date().getTime();
+   try {
+      const res = await chai
+         .request(server)
+         .post(endpoint)
+         .set("authorization", this.authorization)
+         .set("client_id", this.client_id);
+      this.response = res;
+      const endTime = new Date().getTime();
+      this.duration = endTime - startTime;
+   } catch (err) {
+      throw new Error(err);
+   }
+});
 
-// Given(`userId la {string}`, (userId) => {
-//     requestBody.userId = userId;
-// });
+Then(
+   "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ {string} ở hàng {string}",
+   function (sheetName, rowIndex) {
+      expect(this.response).to.have.status(parseInt(this.expected_status));
+      this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
+      this.attach(`Trạng thái phản hồi: ${this.response.status}`);
+   }
+);
 
-// Given(`phone la {string}`, (phone) => {
-//     requestBody.phone = phone;
-// });
+Then(
+   "Nếu trạng thái phản hồi là {int}, thì tôi sẽ không được phép thanh toán và yêu cầu đăng nhập lại",
+   function (status) {
+      if (this.response.status === status) {
+         this.attach("Bạn không có quyền thanh toán, yêu cầu đăng nhập lại."); // Xuất ra thông báo
+      }
+   }
+);
 
-// Given(`email la {string}`, (email) => {
-//     requestBody.email = email;
-// });
+Then("Dữ liệu trả về có đúng với định dạng JSON", function () {
+   expect(this.response).to.be.json; // Kiểm tra xem dữ liệu trả về có phải là JSON không
+});
 
-// Given(`items bao gom {string} va {string}`, (item1, item2) => {
-//     requestBody.items = [item1, item2];
-// });
-
-// Given(`totalPrice la {int}`, (total) => {
-//     requestBody.totalPrice = total;
-// });
-
-// Given(`shippingAddress la {string}`, (address) => {
-//     requestBody.shippingAddress = address;
-// });
-
-// Given(`paymentMethod la {string}`, (method) => {
-//     requestBody.paymentMethod = method;
-// });
-
-// Given(`finalPrice la {int}`, (final) => {
-//     requestBody.finalPrice = final;
-// });
-
-// Given(`note la {string}`, (note) => {
-//     requestBody.note = note;
-// });
-
-// Given(`voucherId la {string}`, (voucherId) => {
-//     requestBody.voucherId = voucherId;
-// });
-
-// Given(`discountAmount la {int}`, (amount) => {
-//     requestBody.discountAmount = amount;
-// });
-
-// // [When] Describes the action or event that triggers the scenario.
-// When(`Toi gui yeu cau POST den API`, () => {
-//     cy.request({
-//         method: 'POST',
-//         url: apiEndpoint,
-//         headers: {
-//             'client_id': clientId,
-//             'Authorization': authorization,
-//         },
-//         body: requestBody
-//     }).then((response) => {
-//         responseStatus = response.status;
-//         responseBody = response.body;
-//     });
-// });
-
-// When(`Toi gui yeu cau POST den API voi client_id sai va authorization`, () => {
-//     clientId = 'invalid_client_id';
-//     authorization = 'invalid_authorization';
-//     return cy.request({
-//         method: 'POST',
-//         url: apiEndpoint,
-//         headers: {
-//             'client_id': clientId,
-//             'Authorization': authorization,
-//         },
-//         body: requestBody,
-//         failOnStatusCode: false // Prevent Cypress from failing the test on non-2xx response
-//     }).then((response) => {
-//         responseStatus = response.status;
-//         responseBody = response.body;
-//     });
-// });
-
-// When(`Toi gui yeu cau POST den API ma khong co client_id`, () => {
-//     return cy.request({
-//         method: 'POST',
-//         url: apiEndpoint,
-//         headers: {
-//             'Authorization': authorization,
-//         },
-//         body: requestBody,
-//         failOnStatusCode: false
-//     }).then((response) => {
-//         responseStatus = response.status;
-//         responseBody = response.body;
-//     });
-// });
-
-// When(`Toi gui yeu cau POST den API ma khong co authorization`, () => {
-//     return cy.request({
-//         method: 'POST',
-//         url: apiEndpoint,
-//         headers: {
-//             'client_id': clientId,
-//         },
-//         body: requestBody,
-//         failOnStatusCode: false
-//     }).then((response) => {
-//         responseStatus = response.status;
-//         responseBody = response.body;
-//     });
-// });
-
-// When(`Toi gui yeu cau POST den API voi client_id va authorization sai`, () => {
-//     clientId = 'invalid_client_id';
-//     authorization = 'invalid_authorization';
-//     return cy.request({
-//         method: 'POST',
-//         url: apiEndpoint,
-//         headers: {
-//             'client_id': clientId,
-//             'Authorization': authorization,
-//         },
-//         body: requestBody,
-//         failOnStatusCode: false
-//     }).then((response) => {
-//         responseStatus = response.status;
-//         responseBody = response.body;
-//     });
-// });
-
-// // [Then] Describes the expected outcome or result of the scenario.
-// Then(`Ket qua phai tra ve ma trang thai la {int}`, (status) => {
-//     expect(responseStatus).to.eq(status);
-// });
-
-// Then(`Ket qua phai co thong diep {string}`, (message) => {
-//     expect(responseBody.message).to.eq(message);
-// });
+Then("Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian {string} milliseconds", function (time) {
+   this.attach(`Thời gian thực thi: ${this.duration} milliseconds`);
+   expect(this.duration).to.be.below(Number(time)); // Kiểm tra thời gian phản hồi
+});

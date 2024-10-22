@@ -1,16 +1,21 @@
 {
    "name": "testing_source_code",
    "version": "1.0.0",
-   "main": "index.js",
    "scripts": {
-      "auth": "cucumber-js --config src/configs/config.auth.js ",
-      "rauth": "node \"src/reports/Auth/cucumber.report.js\"",
-      "product": "cucumber-js --config src/configs/cucumberConfig.js",
-      "rproduct": "node \"src/reports/cucumber.report.js\"",
+      "auth": "cucumber-js --config src/configs/config.auth.js",
+      "ra": "node \"src/reports/Auth/cucumber.report.js\"",
+      "product": "cucumber-js --config src/configs/config.product.js",
+      "rpt": "node \"src/reports/Products/cucumber.report.js\"",
       "cart": "cucumber-js --config src/configs/config.cart.js",
-      "rcart": "node \"src/reports/Cart/cucumber.report.js\"",
+      "rc": "node \"src/reports/Cart/cucumber.report.js\"",
       "checkout": "cucumber-js --config src/configs/config.checkout.js",
-      "rcheckout": "node \"src/reports/Checkout/cucumber.report.js\""
+      "rco": "node \"src/reports/Checkout/cucumber.report.js\"",
+      "search": "cucumber-js --config src/configs/config.search.js",
+      "rs": "node \"src/reports/Search/cucumber.report.js\"",
+      "filter": "cucumber-js --config src/configs/config.filter.js",
+      "rf": "node \"src/reports/Filter/cucumber.report.js\"",
+      "profile": "cucumber-js --config src/configs/config.profile.js",
+      "rp": "node \"src/reports/User/cucumber.report.js\""
    },
    "keywords": [
       "testing",
@@ -28,6 +33,7 @@
       "chai": "^4.2.0",
       "chai-http": "^4.2.0",
       "cucumber-html-reporter": "^7.2.0",
+      "dotenv": "^16.4.5",
       "selenium-webdriver": "^4.25.0",
       "xlsx": "^0.18.5"
    }

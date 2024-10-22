@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 79169200
+              "duration": 67343399
             },
             "embeddings": [
               {
@@ -37,9 +37,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:33"
             },
             "result": {
-              "status": "failed",
-              "duration": 32200000,
-              "error_message": "Error: AggregateError\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:45:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 67356300
             }
           },
           {
@@ -51,9 +50,19 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:49"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 5333899
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIHRyxrDhu51uZyBo4bujcCI6Ik5nxrDhu51pIGTDuW5nIGtow7RuZyB4w6FjIHRo4buxYyDEkcaw4bujYyBkbyBjbGllbnRfaWQga2jDtG5nIGjhu6NwIGzhu4ciLCJDbGllbnRfaWQiOiI2NzExZTM2YzJiMTkwZTY2Yzg5YWUyMDIiLCJBdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekV6WWpVME4yRmtZMkl5TnpOaU1HTXhPV1k1TURRaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVE5BWjIxaGFXd3VZMjl0SWl3aWFXRjBJam94TnpJNU5ERTBPRGcxTENKbGVIQWlPakUzTmpBNU56STBPRFY5LnByTDlRUS1jaDBjcEJUWXhkXzhPMlZsODVST0cyU3d6aVpQMW5KV09aaTIxIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MTl9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -64,9 +73,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 4535899
+            },
+            "embeddings": [
+              {
+                "data": "QuG6oW4ga2jDtG5nIGPDsyBxdXnhu4FuIHRoYW5oIHRvw6FuLCB5w6p1IGPhuqd1IMSRxINuZyBuaOG6rXAgbOG6oWku",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -77,8 +92,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2973200
             }
           },
           {
@@ -90,9 +105,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 4119099
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNjUgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
@@ -115,7 +136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17564800
+              "duration": 34226400
             },
             "embeddings": [
               {
@@ -133,9 +154,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:33"
             },
             "result": {
-              "status": "failed",
-              "duration": 6503699,
-              "error_message": "Error: AggregateError\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:45:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 14039299
             }
           },
           {
@@ -147,9 +167,19 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:49"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 727199
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIHRyxrDhu51uZyBo4bujcCI6Ik5nxrDhu51pIGTDuW5nIGtow7RuZyB4w6FjIHRo4buxYyDEkcaw4bujYyBkbyBhdXRob3JpemF0aW9uIGtow7RuZyBo4bujcCBs4buHIiwiQ2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiQXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFellqVTBOMkZrWTJJeU56TmlNR014T1dZNU1EUWlMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVROQVoyMWhhV3d1WTI5dElpd2lhV0YwSWpveE56STVOREUwT0RnMUxDSmxlSEFpT2pFM05qQTVOekkwT0RWOS5wckw5UVEtY2gwY3BCVFl4ZF84TzJWbDg1Uk9HMlN3emlaUDFuSldPeHh4eCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5fQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -160,9 +190,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 509700
+            },
+            "embeddings": [
+              {
+                "data": "QuG6oW4ga2jDtG5nIGPDsyBxdXnhu4FuIHRoYW5oIHRvw6FuLCB5w6p1IGPhuqd1IMSRxINuZyBuaOG6rXAgbOG6oWku",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -173,8 +209,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 486499
             }
           },
           {
@@ -186,9 +222,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 407600
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTMgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
@@ -211,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14707799
+              "duration": 16756900
             },
             "embeddings": [
               {
@@ -229,9 +271,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:33"
             },
             "result": {
-              "status": "failed",
-              "duration": 2635399,
-              "error_message": "Error: AggregateError\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:45:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 7375999
             }
           },
           {
@@ -243,8 +284,9 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:49"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 10316100,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +419\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:52:37)"
             }
           },
           {
@@ -307,7 +349,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16652299
+              "duration": 19196799
             },
             "embeddings": [
               {
@@ -325,9 +367,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:33"
             },
             "result": {
-              "status": "failed",
-              "duration": 2792500,
-              "error_message": "Error: AggregateError\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\tests\\step_definitions\\Checkout\\_checkout.step.js:45:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 11496199
             }
           },
           {
@@ -339,9 +380,19 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:49"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 409900
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIHRyxrDhu51uZyBo4bujcCI6Ik5nxrDhu51pIGTDuW5nIGtow7RuZyB4w6FjIHRo4buxYyDEkcaw4bujYyBkbyBhdXRob3JpemF0aW9uIGtow7RuZyBjw7MiLCJDbGllbnRfaWQiOiI2NzExZTM2YzJiMTkwZTY2Yzg5YWUyMDIiLCJBdXRob3JpemF0aW9uIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5fQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -352,9 +403,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 213099
+            },
+            "embeddings": [
+              {
+                "data": "QuG6oW4ga2jDtG5nIGPDsyBxdXnhu4FuIHRoYW5oIHRvw6FuLCB5w6p1IGPhuqd1IMSRxINuZyBuaOG6rXAgbOG6oWku",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -365,8 +422,8 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 374900
             }
           },
           {
@@ -378,9 +435,15 @@
               "location": "src\\tests\\step_definitions\\Checkout\\_checkout.step.js:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 268499
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTEgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
