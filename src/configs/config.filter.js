@@ -1,9 +1,9 @@
 module.exports = {
    default: {
       publish: true,
-      paths: ["src/tests/features/FilterProduct/*.feature"],
+      paths: ["src/testUnits/features/FilterProduct/*.feature"],
       require: [
-         "src/tests/step_definitions/FilterProduct/*.js",
+         "src/testUnits/step_definitions/FilterProduct/*.js",
          "src/hooks/common/*.js",
          "src/hooks/FilterProduct/*.js",
       ],

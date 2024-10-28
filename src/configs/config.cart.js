@@ -1,8 +1,8 @@
 module.exports = {
    default: {
       publish: true,
-      paths: ["src/tests/features/Cart/*.feature"],
-      require: ["src/tests/step_definitions/Cart/*.js", "src/hooks/common/*.js", "src/hooks/Cart/*.js"],
+      paths: ["src/testUnits/features/Cart/*.feature"],
+      require: ["src/testUnits/step_definitions/Cart/*.js", "src/hooks/common/*.js", "src/hooks/Cart/*.js"],
       format: [
          "progress-bar",
          "html:src/reports/Cart/cucumber-report.html",

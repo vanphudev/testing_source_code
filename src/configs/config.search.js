@@ -1,9 +1,9 @@
 module.exports = {
    default: {
       publish: true,
-      paths: ["src/tests/features/SearchProduct/*.feature"],
+      paths: ["src/testUnits/features/SearchProduct/*.feature"],
       require: [
-         "src/tests/step_definitions/SearchProduct/*.js",
+         "src/testUnits/step_definitions/SearchProduct/*.js",
          "src/hooks/common/*.js",
          "src/hooks/SearchProduct/*.js",
       ],

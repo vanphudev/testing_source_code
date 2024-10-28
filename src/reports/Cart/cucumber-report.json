@@ -1,29 +1,29 @@
 [
   {
-    "description": "   Description: This feature will test the update product quantity API endpoints.",
+    "description": "   Description: This feature will test the Add Product to Cart API endpoint.",
     "elements": [
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
         "line": 13,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"1\"",
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"1\" cần thêm vào giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 57357199
+              "duration": 51285100
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcgdsOgIHTEg25nIHPhuqNuIHBo4bqpbSB24bubaSBwcm9kdWN0SWQgdOG7k24gdOG6oWkgIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME1UWTVOekVzSW1WNGNDSTZNVGMyTURrM05EVTNNWDAueGdfcXh0bWg1akdLbXc0V3pvbmM1aHFES0hVQ21xMG5vczEwN0FaLU0wMCIsIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsMjAwLCJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYVwiXHJcbn0iXQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIG51bGwiLCJjbGllbnRfaWQiOiI2NzE0N2FlZDMxMDYyZmFlYWVhZDJhMTkiLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsInByb2R1Y3RJZCI6Im51bGwiLCJxdWFudGl0eSI6Im51bGwiLCJleHBlY3RlZF9yZXN1bHQiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IG51bGwsICBcclxuICAgIFwicXVhbnRpdHlcIjogbnVsbFxyXG59In0=",
                 "mime_type": "application/json"
               }
             ]
@@ -32,36 +32,36 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/increaseQuantity\"",
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 53501999
+              "duration": 44606899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"1\"",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"1\"",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
             },
             "result": {
               "status": "failed",
-              "duration": 13322199,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +200\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
+              "duration": 15390899,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:61:37)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
             },
             "result": {
               "status": "skipped",
@@ -72,9 +72,22 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
             },
             "result": {
               "status": "skipped",
@@ -82,31 +95,36 @@
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
         "line": 14,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"2\"",
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"2\" cần thêm vào giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 15636399
+              "duration": 29624000
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcgduG7m2kgdmnhu4djIGdp4bqjbSBz4bqjbiBwaOG6qW0sIHByb2R1Y3RJZCAgdOG7k24gdOG6oWkgIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME1UWTVOekVzSW1WNGNDSTZNVGMyTURrM05EVTNNWDAueGdfcXh0bWg1akdLbXc0V3pvbmM1aHFES0hVQ21xMG5vczEwN0FaLU0wMCIsIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsMjAwLCJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYVwiXHJcbn0iXQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIHLhu5duZyIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswT0RnMU56WXNJbVY0Y0NJNk1UYzJNVEEwTmpFM05uMC5lUGhYU1h3MVdMdGcxQmU4bHp3bnE1NTVDQkxVclhreUh4cGNaejVWVjFNIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIlwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IFwiXCJcclxufSJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -115,36 +133,36 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/decreaseQuantity\"",
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 13951999
+              "duration": 15851600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"2\"",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"2\"",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
             },
             "result": {
               "status": "failed",
-              "duration": 3073000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +200\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
+              "duration": 5381500,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:61:37)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
             },
             "result": {
               "status": "skipped",
@@ -155,9 +173,22 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
             },
             "result": {
               "status": "skipped",
@@ -165,31 +196,36 @@
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
         "line": 15,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"4\"",
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"3\" cần thêm vào giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 6145300
+              "duration": 10743500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcgduG7m2kgdmnhu4djIHTEg25nIHPhuqNuIHBo4bqpbSBuaMawbmcgcHJvZHVjdElkIGtow7RuZyB04buTbiB04bqhaSAiLCI2NzE0N2FlZDMxMDYyZmFlYWVhZDJhMTkiLCJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiw0MDAsIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiMVwiXHJcbn0iXQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCAwICIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswT0RnMU56WXNJbVY0Y0NJNk1UYzJNVEEwTmpFM05uMC5lUGhYU1h3MVdMdGcxQmU4bHp3bnE1NTVDQkxVclhreUh4cGNaejVWVjFNIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOjAsImV4cGVjdGVkX3Jlc3VsdCI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiAwXHJcbn0ifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -198,36 +234,36 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/decreaseQuantity\"",
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 8929799
+              "duration": 9200100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"4\"",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"3\"",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
             },
             "result": {
               "status": "failed",
-              "duration": 5505499,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +400\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
+              "duration": 9975500,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:61:37)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
             },
             "result": {
               "status": "skipped",
@@ -238,9 +274,22 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
             },
             "result": {
               "status": "skipped",
@@ -248,31 +297,36 @@
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
         "line": 16,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"3\"",
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"4\" cần thêm vào giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 6210399
+              "duration": 9767900
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcgduG7m2kgdmnhu4djIGdp4bqjbSBz4bqjbiBwaOG6qW0scHJvZHVjdElkIGtow7RuZyAgdOG7k24gdOG6oWkgIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME1UWTVOekVzSW1WNGNDSTZNVGMyTURrM05EVTNNWDAueGdfcXh0bWg1akdLbXc0V3pvbmM1aHFES0hVQ21xMG5vczEwN0FaLU0wMCIsIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsNDAwLCJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjFcIlxyXG59Il0=",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCBo4bujcCBs4buHIiwiY2xpZW50X2lkIjoiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBPRGcxTnpZc0ltVjRjQ0k2TVRjMk1UQTBOakUzTm4wLmVQaFhTWHcxV0x0ZzFCZThsenducTU1NUNCTFVyWGt5SHhwY1p6NVZWMU0iLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiZXhwZWN0ZWRfcmVzdWx0IjoyMDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IDJcclxufSJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -281,36 +335,36 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/increaseQuantity\"",
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 10790300
+              "duration": 8921899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"3\"",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"4\"",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
             },
             "result": {
               "status": "failed",
-              "duration": 4787800,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +400\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
+              "duration": 3371000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:61:37)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
             },
             "result": {
               "status": "skipped",
@@ -321,9 +375,22 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
             },
             "result": {
               "status": "skipped",
@@ -331,31 +398,36 @@
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
         "line": 17,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"5\"",
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"5\" cần thêm vào giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 4905899
+              "duration": 9724699
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aOG6pXQgYuG6oWkga2hpICBhdXRob3JpemF0aW9uIGjhur90IGjhuqFuIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME1UWTVOekVzSW1WNGNDSTZNVGMyTURrM05EVTNNWDAueGdfcXh0bWg1akdLbXc0V3pvbmM1aHFES0hVQ21xMG5vczEwN0FaLU0wMCIsIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsNDE5LCJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYVwiXHJcbn0iXQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIHbhu5tpIDIgdGhhbSBz4buRIGNsaWVudF9pZCB2w6AgYXV0aG9yaXphdGlvbiBy4buXbmciLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDEiLCJxdWFudGl0eSI6MiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IDJcclxufSJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -364,69 +436,280 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/increaseQuantity\"",
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
             },
             "result": {
-              "status": "passed",
-              "duration": 12560899
+              "status": "failed",
+              "duration": 1922799,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"authorization\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:54:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"5\"",
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"5\"",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
             },
             "result": {
-              "status": "passed",
-              "duration": 556900
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogdW5kZWZpbmVk",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "skipped",
+              "duration": 0
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
             },
             "result": {
-              "status": "passed",
-              "duration": 4525300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi có dữ liệu Excel chứa thông tin người dùng, sảm phẩm và số lượng sản phẩm từ \"Add_Item\" ở hàng \"6\" cần thêm vào giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3662199
+              "duration": 6020600
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTMgbWlsbGlzZWNvbmRz",
-                "mime_type": "text/plain"
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIGPDsyB04buTbiB04bqhaSBwcm9kdWN0SWQgbmjGsG5nIHRow6ptIHRo4bqldCBi4bqhaSB2w6wgcXVhbnRpdHkgbmjhuq1wIHPhu5Egw6JtIiwiY2xpZW50X2lkIjoiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBPRGcxTnpZc0ltVjRjQ0k2TVRjMk1UQTBOakUzTm4wLmVQaFhTWHcxV0x0ZzFCZThsenducTU1NUNCTFVyWGt5SHhwY1p6NVZWMU0iLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6LTIsImV4cGVjdGVkX3Jlc3VsdCI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiAtMlxyXG59In0=",
+                "mime_type": "application/json"
               }
             ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7458399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3556800,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:83"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add_Item",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-product-to-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add Product to Cart",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\Cart\\addProduct.feature"
+  },
+  {
+    "description": "   Description: This feature will test the delete cart API endpoint for removing a user's cart entirely.",
+    "elements": [
+      {
+        "description": "",
+        "id": "delete-user-cart;xóa-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Xóa giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Remove_Cart\" ở hàng \"1\" cần xóa giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10352000
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIGdp4buPIGjDoG5nIiwiY2xpZW50X2lkIjoiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBNVFk1TnpFc0ltVjRjQ0k2TVRjMk1EazNORFUzTVgwLnhnX3F4dG1oNWpHS213NFd6b25jNWhxREtIVUNtcTBub3MxMDdBWi1NMDAiLCJleHBlY3RlZF9yZXN1bHQiOjIwMH0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP DELETE đến \"<url>\" để xóa giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:35"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3465500,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"authorization\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:47:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Cart\" ở hàng \"1\" ứng với giỏ hàng cần xóa của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc giỏ hàng đã được xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:60"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để xóa giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:76"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
           }
         ],
         "tags": [],
@@ -434,26 +717,26 @@
       },
       {
         "description": "",
-        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng",
+        "id": "delete-user-cart;xóa-giỏ-hàng-của-người-dùng",
         "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+        "line": 15,
+        "name": "Xóa giỏ hàng của người dùng",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Tôi có dữ liệu người dùng \"Update\" ở hàng \"6\"",
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Remove_Cart\" ở hàng \"2\" cần xóa giỏ hàng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:24"
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 5374599
+              "duration": 8204899
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aOG6pXQgYuG6oWkga2hpICBjbGllbnRfaWQga2jDtG5nIHTDrG0gdGjhuqV5IixudWxsLCJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiw0MDVd",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MTl9",
                 "mime_type": "application/json"
               }
             ]
@@ -462,23 +745,23 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi muốn gửi yêu cầu PUT đến \"/api/v1/carts/decreaseQuantity\"",
+            "name": "Tôi gửi yêu cầu HTTP DELETE đến \"<url>\" để xóa giỏ hàng của người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:39"
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:35"
             },
             "result": {
               "status": "failed",
-              "duration": 1009800,
-              "error_message": "TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"client_id\"\n    at ClientRequest.setHeader (node:_http_outgoing:658:3)\n    at Request.request (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:660:11)\n    at Request.end (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:764:8)\n    at E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "duration": 1139599,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"authorization\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:47:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Update\" ở hàng \"6\"",
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Cart\" ở hàng \"2\" ứng với giỏ hàng cần xóa của người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:51"
             },
             "result": {
               "status": "skipped",
@@ -489,9 +772,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Nếu trạng thái phản hồi trả về 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc giỏ hàng đã được xóa",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:66"
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:60"
             },
             "result": {
               "status": "skipped",
@@ -502,9 +785,2149 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "Tôi mong muốn sẽ kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để xóa giỏ hàng của người dùng",
             "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\update_quantity_item.js:83"
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:76"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "delete-user-cart;xóa-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Xóa giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Remove_Cart\" ở hàng \"3\" cần xóa giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6574700
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDV9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP DELETE đến \"<url>\" để xóa giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:35"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1098099,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"authorization\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:47:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Cart\" ở hàng \"3\" ứng với giỏ hàng cần xóa của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc giỏ hàng đã được xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:60"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để xóa giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:76"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-user-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Delete User Cart",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\Cart\\clearCart.feature"
+  },
+  {
+    "description": "   Description: This feature will test the remove item from the user cart API endpoint.",
+    "elements": [
+      {
+        "description": "",
+        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"1\" cần xóa khỏi giỏ hàng của người dùng đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8550100
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIG3hurd0IGjDoG5nIHbhu5tpIHByb2R1Y3RJZCBo4bujcCBs4buHIiwiY2xpZW50X2lkIjoiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBNVFk1TnpFc0ltVjRjQ0k2TVRjMk1EazNORFUzTVgwLnhnX3F4dG1oNWpHS213NFd6b25jNWhxREtIVUNtcTBub3MxMDdBWi1NMDAiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MGEiLCJleHBlY3RlZF9yZXN1bHQiOjIwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTBhXCJcclxufSJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10037100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"1\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:59"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6089500,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:62:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:96"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"2\" cần xóa khỏi giỏ hàng của người dùng đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9564699
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIHbhu5tpIHZp4buHYyB4w7NhIG3hurd0IGjDoG5nIHbhu5tpIHByZHVjdElkIGtow7RuZyB04buTbiB04bqhaSIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoicmZkcmdmZTM1NDMiLCJleHBlY3RlZF9yZXN1bHQiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwicmZkcmdmZTM1NDNcIlxyXG59In0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10218799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:59"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4901000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:62:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:96"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"3\" cần xóa khỏi giỏ hàng của người dùng đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11564300
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTBhIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MTksImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYVwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11776799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:59"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4009099,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:62:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:96"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"4\" cần xóa khỏi giỏ hàng của người dùng đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7957400
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTBhIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYVwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 998599,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"client_id\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:54:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:96"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "remove-cart-item",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Remove Cart Item",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\Cart\\deleteProduct.feature"
+  },
+  {
+    "description": "   Description: This feature will test the get user cart endpoint.",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"1\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11004899
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiY2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFeFpUTTJZekppTVRrd1pUWTJZemc1WVdVeU1ESWlMQ0psYldGcGJDSTZJbTVuZFhsbGJuWmhibkJvZFM1b2RXWnBRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN5T1RRek9EWTNOaXdpWlhod0lqb3hOell3T1RrMk1qYzJmUS54VEd5NHJqcWRkME9oTWtlSERZWDBRdlFzNEViREJpWW51Y2Z4MTVtZ2RZIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9370899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"1\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4548700,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"2\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7802200
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiY2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFeFpUTTJZekppTVRrd1pUWTJZemc1WVdVeU1ESWlMQ0psYldGcGJDSTZJbTVuZFhsbGJuWmhibkJvZFM1b2RXWnBRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN5T1RRek9EWTNOaXdpWlhod0lqb3hOell3T1RrMk1qYzJmUS54VEd5NHJqcWRkME9oTWtlSERZWDBRdlFzNEViREJpWW51Y2Z4MTVtZ2RZIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7318999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4953600,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"3\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5818800
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiY2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFeFpUTTJZekppTVRrd1pUWTJZemc1WVdVeU1ESWlMQ0psYldGcGJDSTZJbTVuZFhsbGJuWmhibkJvZFM1b2RXWnBRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN5T1RRek9EWTNOaXdpWlhod0lqb3hOell3T1RrMk1qYzJmUS54VEd5NHJqcWRkME9oTWtlSERZWDBRdlFzNEViREJpWW51Y2Z4MTVtZ2RZIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9941600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2622500,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"4\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5497199
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMga2jDtG5nIHRow6BuaCBjw7RuZyIsImNsaWVudF9pZCI6IjY3MTFlMzZjMmIxOTBlNjZjODlhZTIwMiIsImF1dGhvcml6YXRpb24iOiJudWxsIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MTl9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7727100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3243099,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +419\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"5\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5551999
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiY2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFeFpUTTJZekppTVRrd1pUWTJZemc1WVdVeU1ESWlMQ0psYldGcGJDSTZJbTVuZFhsbGJuWmhibkJvZFM1b2RXWnBRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN5T1RRek9EWTNOaXdpWlhod0lqb3hOell3T1RrMk1qYzJmUS54VEd5NHJqcWRkME9oTWtlSERZWDBRdlFzNEViREJpWW51Y2Z4MTVtZ2RZIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7136399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2432600,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Lấy giỏ hàng của người dùng",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi có dữ liệu người dùng từ \"Get_Cart\" hàng \"6\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7321400
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgSOG7o3AiOiJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiY2xpZW50X2lkIjoiNjcxMWUzNmMyYjE5MGU2NmM4OWFlMjAyIiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFeFpUTTJZekppTVRrd1pUWTJZemc1WVdVeU1ESWlMQ0psYldGcGJDSTZJbTVuZFhsbGJuWmhibkJvZFM1b2RXWnBRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN5T1RRek9EWTNOaXdpWlhod0lqb3hOell3T1RrMk1qYzJmUS54VEd5NHJqcWRkME9oTWtlSERZWDBRdlFzNEViREJpWW51Y2Z4MTVtZ2RZIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7144700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Get_Cart\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:48"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3815200,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -405\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\getCart.step.js:51:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\getCart.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-user-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get User Cart",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\Cart\\getCart.feature"
+  },
+  {
+    "description": "   Description: This feature will test the update product quantity API endpoint by increasing the quantity of a product by 1 in the user's cart.",
+    "elements": [
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"1\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7611900
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbDoCB0xINuZyBz4bqjbiBwaOG6qW0gduG7m2kgcHJvZHVjdElkIHThu5NuIHThuqFpICIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfcmVzdWx0IjoyMDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5458699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"1\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4511499,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"2\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7708099
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyBnaeG6o20gc+G6o24gcGjhuqltLCBwcm9kdWN0SWQgIHThu5NuIHThuqFpICIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfcmVzdWx0IjoyMDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2943800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"2\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3549899,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"3\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5284100
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyBnaeG6o20gc+G6o24gcGjhuqltLHByb2R1Y3RJZCBraMO0bmcgIHThu5NuIHThuqFpICIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjFcIlxyXG59In0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3429399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"3\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2288499,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"4\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5120999
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB0xINuZyBz4bqjbiBwaOG6qW0gbmjGsG5nIHByb2R1Y3RJZCBraMO0bmcgdOG7k24gdOG6oWkgIiwiY2xpZW50X2lkIjoiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBNVFk1TnpFc0ltVjRjQ0k2TVRjMk1EazNORFUzTVgwLnhnX3F4dG1oNWpHS213NFd6b25jNWhxREtIVUNtcTBub3MxMDdBWi1NMDAiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJleHBlY3RlZF9yZXN1bHQiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiMVwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2899699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"4\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2075100,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"5\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5185400
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MTksImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2209600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"5\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2578700,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +NaN\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:61:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-tăng-lên-1",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách tăng lên 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu người dùng từ \"Update_Item\" ở hàng \"6\" cần cập nhật số lượng sản phẩm trong giỏ hàng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5226400
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswTVRZNU56RXNJbVY0Y0NJNk1UYzJNRGszTkRVM01YMC54Z19xeHRtaDVqR0ttdzRXem9uYzVocURLSFVDbXEwbm9zMTA3QVotTTAwIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfcmVzdWx0Ijo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 620100,
+              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"client_id\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:53:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Update_Item\" ở hàng \"6\"",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được tăng lên 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng lên 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"1\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6669900,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 1\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"1\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"2\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4957299,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 2\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"2\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"3\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5185100,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 3\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"3\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 32,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"4\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4608799,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 4\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"4\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 33,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"5\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4510099,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 5\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"5\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "update-product-quantity-in-cart;cập-nhật-số-lượng-sản-phẩm-trong-giỏ-hàng-của-người-dùng-bằng-cách-giảm-xuống-1",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "Cập nhật số lượng sản phẩm trong giỏ hàng của người dùng bằng cách giảm xuống 1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Tôi đã có dữ liệu Excel người dùng từ \"Decrease_Item\" ở hàng \"6\" cần cập nhật số lượng sản phẩm trong giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:87"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4394999,
+              "error_message": "Error: Không tìm thấy dữ liệu ở sheet Decrease_Item hàng 6\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:98:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Decrease_Item\" ở hàng \"6\" ứng với giỏ hàng của người dùng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ phải nhận được dữ liệu giỏ hàng của người dùng với số lượng sản phẩm đã được giảm xuống 1",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"60\" milliseconds cho mỗi Request mà tôi gửi đi để cập nhật số lượng sản phẩm trong giỏ hàng giảm xuống 1 sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:146"
             },
             "result": {
               "status": "skipped",
@@ -521,1241 +2944,6 @@
     "keyword": "Feature",
     "name": "Update Product Quantity in Cart",
     "tags": [],
-    "uri": "src\\tests\\features\\Cart\\CapNhatSP.feature"
-  },
-  {
-    "description": "  Description: This feature will test the Add Product to Cart API endpoint.",
-    "elements": [
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"1\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9879000
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcsIHPhuqNuIHBo4bqpbSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgbnVsbCIsIjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpFME4yRmxaRE14TURZeVptRmxZV1ZoWkRKaE1Ua2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiV1J3TVVCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01qazBPRGcxTnpZc0ltVjRjQ0k2TVRjMk1UQTBOakUzTm4wLmVQaFhTWHcxV0x0ZzFCZThsenducTU1NUNCTFVyWGt5SHhwY1p6NVZWMU0iLCJudWxsIiwibnVsbCIsNDAwLCJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBudWxsLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IG51bGxcclxufSJd",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16927500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"1\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 10435400,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +400\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:68:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"2\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6827999
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcsIHPhuqNuIHBo4bqpbSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgcuG7l25nIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsbnVsbCxudWxsLDQwMCwie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCJcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiBcIlwiXHJcbn0iXQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18667699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"2\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 9883600,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +400\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:68:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"3\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6387999
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcsIHPhuqNuIHBo4bqpbSBjw7MgaWQgdOG7k24gdOG6oWkgdsOgIHPhu5EgbMaw4bujbmcgbMOgIDAgIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsMCw0MDAsIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMFxyXG59Il0=",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15111599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"3\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1215200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2445199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2104599
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTUgbWlsbGlzZWNvbmRz",
-                "mime_type": "text/plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"4\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4826699
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcsIHPhuqNuIHBo4bqpbSBjw7MgaWQgdOG7k24gdOG6oWkgdsOgIHPhu5EgbMaw4bujbmcgbMOgIGjhu6NwIGzhu4ciLCI2NzE0N2FlZDMxMDYyZmFlYWVhZDJhMTkiLCJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswT0RnMU56WXNJbVY0Y0NJNk1UYzJNVEEwTmpFM05uMC5lUGhYU1h3MVdMdGcxQmU4bHp3bnE1NTVDQkxVclhreUh4cGNaejVWVjFNIiwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwyLDIwMCwie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiAyXHJcbn0iXQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19265799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"4\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1127600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 694299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 272100
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTkgbWlsbGlzZWNvbmRz",
-                "mime_type": "text/plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"5\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4257000
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aOG6pXQgYuG6oWkgduG7m2kgMiB0aGFtIHPhu5EgY2xpZW50X2lkIHbDoCBhdXRob3JpemF0aW9uIHLhu5duZyIsbnVsbCwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsbnVsbCxudWxsLDQwNV0=",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 564399,
-              "error_message": "TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"client_id\"\n    at ClientRequest.setHeader (node:_http_outgoing:658:3)\n    at Request.request (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:660:11)\n    at Request.end (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\node\\index.js:764:8)\n    at E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:238:12\n    at Test.then (E:\\Nam4\\KDPM\\testing_source_code\\node_modules\\superagent\\lib\\request-base.js:237:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"5\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-product-to-cart;thêm-sản-phẩm-vào-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 19,
-        "name": "Thêm sản phẩm vào giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "Tôi có dữ liệu người dùng từ \"Add_Item\" ở hàng \"6\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4262500
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJYw6FjIHRo4buxYyBuZ8aw4budaSBkw7luZyB0aMOgbmggY8O0bmcgY8OzIHThu5NuIHThuqFpIHByb2R1Y3RJZCBuaMawbmcgdGjDqm0gdGjhuqV0IGLhuqFpIHbDrCBxdWFudGl0eSBuaOG6rXAgc+G7kSDDom0iLCI2NzE0N2FlZDMxMDYyZmFlYWVhZDJhMTkiLCJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswT0RnMU56WXNJbVY0Y0NJNk1UYzJNVEEwTmpFM05uMC5lUGhYU1h3MVdMdGcxQmU4bHp3bnE1NTVDQkxVclhreUh4cGNaejVWVjFNIiwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwtMiw0MDAsIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogLTJcclxufSJd",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Tôi gửi yêu cầu POST đến \"/api/v1/carts/additem\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12419100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"6\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 928100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:72"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 720900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\add_item_in_cart.js:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 184199
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTIgbWlsbGlzZWNvbmRz",
-                "mime_type": "text/plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Add_Item",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "add-product-to-cart",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Add Product to Cart",
-    "tags": [],
-    "uri": "src\\tests\\features\\Cart\\ThemSP.feature"
-  },
-  {
-    "description": "   Description: This feature will test the remove item from the user cart endpoint.",
-    "elements": [
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu người dùng từ \"Remove_Item\" ở hàng \"1\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi muốn gửi yêu cầu DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Remove_Item\" ở hàng \"1\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu người dùng từ \"Remove_Item\" ở hàng \"2\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi muốn gửi yêu cầu DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Remove_Item\" ở hàng \"2\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu người dùng từ \"Remove_Item\" ở hàng \"3\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi muốn gửi yêu cầu DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Remove_Item\" ở hàng \"3\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu người dùng từ \"Remove_Item\" ở hàng \"4\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi muốn gửi yêu cầu DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Remove_Item\" ở hàng \"4\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "remove-cart-item",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Remove Cart Item",
-    "tags": [],
-    "uri": "src\\tests\\features\\Cart\\XoaSP.feature"
-  },
-  {
-    "description": "   Description: This feature will test the get user cart endpoint.",
-    "elements": [
-      {
-        "description": "",
-        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Lấy giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi có dữ liệu người dùng từ \"Users\" hàng \"1\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4265699
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsMjAwXQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23810500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"1\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 874599
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMgdGjDoG5oIGPDtG5nIiwiNjcxNDdhZWQzMTA2MmZhZWFlYWQyYTE5IiwiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekUwTjJGbFpETXhNRFl5Wm1GbFlXVmhaREpoTVRraUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJXUndNVUJuYldGcGJDNWpiMjBpTENKcFlYUWlPakUzTWprME9EZzFOellzSW1WNGNDSTZNVGMyTVRBME5qRTNObjAuZVBoWFNYdzFXTHRnMUJlOGx6d25xNTU1Q0JMVXJYa3lIeHBjWno1VlYxTSIsMjAwXQ==",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDIwMA==",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1476100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1452999
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxNGJhMzZjZTg1NmZlZDBlNTFlNzc1IiwKICAidXNlcklkIjogIjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAicHJvZHVjdElkIjogewogICAgICAgICJfaWQiOiAiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwKICAgICAgICAibmFtZSI6ICJTb24gbcO0aSBNQUMiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJTb24gbcO0aSBjaOG6pXQgbMaw4bujbmcgY2FvIHbhu5tpIG5oaeG7gXUgbcOgdSBz4bqvYy4iLAogICAgICAgICJwcmljZSI6IDQ1MDAwMCwKICAgICAgICAiaW1hZ2VzIjogWwogICAgICAgICAgImh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2RraGtqYXVhbC9pbWFnZS91cGxvYWQvdjE3Mjg5MzM0MDIvc29uLW1hYy14aW1hbC1zaWxreS1tYXR0ZS1saXBzdGlfZHc1eTlmLnBuZyIsCiAgICAgICAgICAiaHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGtoa2phdWFsL2ltYWdlL3VwbG9hZC92MTcyOTEzOTE5MS9zb24tbWFjLTk5Ny1uYXUtdGF5LW92ZXItdGhlLXRhdXBlLXBvd2Rlci1raXNzLWxpcXVpZC02MTg0ZTFkMTRkNzNlLTA1MTEyMDIxMTQ0ODMzX3N6bnZidC53ZWJwIiwKICAgICAgICAgICJodHRwczovL3Jlcy5jbG91ZGluYXJ5LmNvbS9ka2hramF1YWwvaW1hZ2UvdXBsb2FkL3YxNzI5MTM5MTg4L3Nvbl9tYWNfYmx1cl9zbGltX184OTdfc3RheV9jdXJpb3VzLW1pbl85ZDc4MThkMTU1MGI0YjgyYWUwNTRhNTRlMzE0NzE5M19wY2drcTIud2VicCIsCiAgICAgICAgICAiaHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGtoa2phdWFsL2ltYWdlL3VwbG9hZC92MTcyOTEzOTE4NS9zb24tbWFjLWxvY2tlZC1raXNzLWluay0yNGhyLWxpcGNvbG91ci05MS1lbXBoYXRpYy1tYXUtY2FtLWdhY2gtNjUwMTJkY2Y5NGU4My0xMzA5MjAyMzEwMzQzOV9qb25haDQud2VicCIsCiAgICAgICAgICAiaHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGtoa2phdWFsL2ltYWdlL3VwbG9hZC92MTcyOTEzOTE4Mi9zb24tbWFjLW1hdHRlLW1hcnJha2VzaC02NDYtZG8tbmF1LXF1eWVuLXJ1LTYzMmQxYjMwMWM2NjMtMjMwOTIwMjIwOTM0MjRfYXl3b292LndlYnAiLAogICAgICAgICAgImh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2RraGtqYXVhbC9pbWFnZS91cGxvYWQvdjE3MjkxMzkxNzkvMTcyMDI1NTQ4My00X3lob2V2ai5qcGciLAogICAgICAgICAgImh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2RraGtqYXVhbC9pbWFnZS91cGxvYWQvdjE3MjkxMzkxNzcvc29uX21hY19pbmtfODBfZG95ZW5uZV9lMTExNWU2ZDRjNGM0MjgxOWQ2MDQzNjFmOTZhMDBmOV9rZndpZnAud2VicCIKICAgICAgICBdLAogICAgICAgICJjYXRlZ29yeUlkIjogIjY0YjdkNzBjMmY3OThiY2E0NjRjMTQ2MiIsCiAgICAgICAgImJyYW5kSWQiOiAiNjcwZDYxY2Y3Mzk3ZDJkZmFhNmUwOTg0IiwKICAgICAgICAiaW52ZW50b3J5IjogMTAsCiAgICAgICAgInJhdGluZ3MiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJfaWQiOiAiNjcxNjg5ZDc4YjE3MGUxNzZkNDI2NTM2IiwKICAgICAgICAgICAgInVzZXJJZCI6ICI2MGQ1ZjQ4NGY3YTFhMjVjNWMzYTFiMGUiLAogICAgICAgICAgICAicmF0aW5nIjogNSwKICAgICAgICAgICAgInJldmlldyI6ICJT4bqjbiBwaOG6qW0gcuG6pXQgdOG7kXQhIiwKICAgICAgICAgICAgImRhdGUiOiAiMjAyNC0xMC0xNFQxODo1MjoyNS4zMjdaIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIl9pZCI6ICI2NzE2ODlkNzhiMTcwZTE3NmQ0MjY1MzciLAogICAgICAgICAgICAidXNlcklkIjogIjYwZDVmNDg0ZjdhMWEyNWM1YzNhMWIwZiIsCiAgICAgICAgICAgICJyYXRpbmciOiA0LAogICAgICAgICAgICAicmV2aWV3IjogIkNo4bqldCBsxrDhu6NuZyDhu5VuLCBuaMawbmcgZ2nDoSBoxqFpIGNhby4iLAogICAgICAgICAgICAiZGF0ZSI6ICIyMDI0LTEwLTE0VDE4OjUyOjI1LjMyN1oiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiX2lkIjogIjY3MTY4OWQ3OGIxNzBlMTc2ZDQyNjUzOCIsCiAgICAgICAgICAgICJ1c2VySWQiOiAiNjBkNWY0ODRmN2ExYTI1YzVjM2ExYjEwIiwKICAgICAgICAgICAgInJhdGluZyI6IDMsCiAgICAgICAgICAgICJyZXZpZXciOiAiS2jDtG5nIG5oxrAgbW9uZyDEkeG7o2kuIiwKICAgICAgICAgICAgImRhdGUiOiAiMjAyNC0xMC0xNFQxODo1MjoyNS4zMjdaIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIl9pZCI6ICI2NzE2ODlkNzhiMTcwZTE3NmQ0MjY1MzkiLAogICAgICAgICAgICAidXNlcklkIjogIjYwZDVmNDg0ZjdhMWEyNWM1YzNhMWIxMSIsCiAgICAgICAgICAgICJyYXRpbmciOiAyLAogICAgICAgICAgICAicmV2aWV3IjogIlPhuqNuIHBo4bqpbSBraMO0bmcgxJHDoXAg4bupbmcgxJHGsOG7o2MgecOqdSBj4bqndS4iLAogICAgICAgICAgICAiZGF0ZSI6ICIyMDI0LTEwLTE0VDE4OjUyOjI1LjMyN1oiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiX2lkIjogIjY3MTY4OWQ3OGIxNzBlMTc2ZDQyNjUzYSIsCiAgICAgICAgICAgICJ1c2VySWQiOiAiNjBkNWY0ODRmN2ExYTI1YzVjM2ExYjEyIiwKICAgICAgICAgICAgInJhdGluZyI6IDEsCiAgICAgICAgICAgICJyZXZpZXciOiAiUuG6pXQgdGjhuqV0IHbhu41uZyB24bubaSBz4bqjbiBwaOG6qW0gbsOgeS4iLAogICAgICAgICAgICAiZGF0ZSI6ICIyMDI0LTEwLTE0VDE4OjUyOjI1LjMyN1oiCiAgICAgICAgICB9CiAgICAgICAgXSwKICAgICAgICAiYXR0cmlidXRlcyI6IFsKICAgICAgICAgIHsKICAgICAgICAgICAgIl9pZCI6ICI2NzE2ODlkNzhiMTcwZTE3NmQ0MjY1M2IiLAogICAgICAgICAgICAia2V5IjogIk3DoHUgc+G6r2MiLAogICAgICAgICAgICAidmFsdWUiOiAixJDhu48iCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiX2lkIjogIjY3MTY4OWQ3OGIxNzBlMTc2ZDQyNjUzYyIsCiAgICAgICAgICAgICJrZXkiOiAiQ2jhuqV0IGxp4buHdSIsCiAgICAgICAgICAgICJ2YWx1ZSI6ICJDaOG7qWEgdml0YW1pbiBFIgogICAgICAgICAgfQogICAgICAgIF0sCiAgICAgICAgInByb2R1Y3RVcmwiOiAibWFjX2xpcHN0aWNrIiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjQtMDctMjBUMDg6MDA6MDAuMDAwWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI0LTA3LTIwVDA4OjAwOjAwLjAwMFoiLAogICAgICAgICJkaXNjb3VudCI6IDAKICAgICAgfSwKICAgICAgInF1YW50aXR5IjogNDMsCiAgICAgICJfaWQiOiAiNjcxNWU2ZTA4YjE3MGUxNzZkNDI2MTRiIgogICAgfQogIF0sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTIwVDA4OjA3OjE4LjU2NFoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yMVQxNzowNToyNy4xMzNaIiwKICAiX192IjogMTkKfQo=",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:78"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1111200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:93"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1533799
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjMgbWlsbGlzZWNvbmRz",
-                "mime_type": "text/plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@C",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "Lấy giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi có dữ liệu người dùng từ \"Users\" hàng \"2\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3989399
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMga2jDtG5nIHRow6BuaCBjw7RuZyIsIjY3MTQ3YWVkMzEwNjJmYWVhZWFkMmExOSIsIm51bGwiLDQwNV0=",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8132500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"2\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 2411999,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -419\n    +405\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:62"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:78"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:93"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@C",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "get-user-cart;lấy-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Lấy giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi có dữ liệu người dùng từ \"Users\" hàng \"3\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3059099
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogWyJUcsaw4budbmcgaOG7o3AgbmfGsOG7nWkgZMO5bmcgeMOhYyB0aOG7sWMga2jDtG5nIHRow6BuaCBjw7RuZyIsIm51bGwiLCJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RTBOMkZsWkRNeE1EWXlabUZsWVdWaFpESmhNVGtpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYldSd01VQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNamswT0RnMU56WXNJbVY0Y0NJNk1UYzJNVEEwTmpFM05uMC5lUGhYU1h3MVdMdGcxQmU4bHp3bnE1NTVDQkxVclhreUh4cGNaejVWVjFNIiw0MDVd",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu GET đến đường dẫn \"/api/v1/carts/getcart/byuser\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3337500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi với expected_status từ \"Users\" ở hàng \"3\"",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:53"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 2917100,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +405\n\n    at World.<anonymous> (E:\\Nam4\\KDPM\\testing_source_code\\src\\tests\\step_definitions\\Cart\\cart_steps.js:56:37)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:62"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi sẽ kiểm tra dữ liệu trả về có đúng với định dạng kiểu JSON",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi sẽ kiểm tra các trường thông tin giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:78"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "Tôi muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"1800\" milliseconds",
-            "match": {
-              "location": "src\\tests\\step_definitions\\Cart\\cart_steps.js:93"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@C",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "get-user-cart",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Get User Cart",
-    "tags": [],
-    "uri": "src\\tests\\features\\Cart\\cart_feature.feature"
+    "uri": "src\\testUnits\\features\\Cart\\updateCart.feature"
   }
 ]

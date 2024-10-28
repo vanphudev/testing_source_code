@@ -1,0 +1,843 @@
+[
+  {
+    "description": "   Description: This feature will test the search products API endpoint based on a search term.",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"1\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48039200
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gc+G6o24gcGjhuqltIHbhu5tpIFwiS2VtXCIgY8OzIGLDqm4gdHLDs25nIGjhu4cgdGjhu5FuZyIsInNlYXJjaFRlcm0iOiJLZW0iLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09S2VtIn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36746699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"1\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 19327600,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"2\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16527199
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gc+G6o24gcGjhuqltIHbhu5tpIFwiS2VtIGTGsOG7oW5nXCIgY8OzIGLDqm4gdHLDs25nIGjhu4cgdGjhu5FuZyIsInNlYXJjaFRlcm0iOiJLZW0gZMaw4buhbmciLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09S2VtIGTGsOG7oW5nIn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2528199,
+              "error_message": "Error: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:42:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"2\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"3\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9605900
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gduG7m2kgdOG7qyBraMOzYSBy4buXbmcgbMOgIGtob+G6o25nIHRy4bqvbmciLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09In0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5970699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"3\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4235200,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"4\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6013400
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gc+G6o24gcGjhuqltIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBo4buHIHRo4buRbmciLCJzZWFyY2hUZXJtIjoiS2jDtG5nVOG7k25U4bqhaSIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9zZWFyY2g/c2VhcmNoVGVybT1LaMO0bmdU4buTblThuqFpIn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 927199,
+              "error_message": "Error: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:42:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"4\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"5\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6792300
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gduG7m2kga8O9IHThu7EgxJHhurdjIGJp4buHdCIsInNlYXJjaFRlcm0iOiJLZW1AIyQlIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDAsIkRhdGEiOiJodHRwOi8vbG9jYWxob3N0OjU1NTUvYXBpL3YxL3Byb2R1Y3RzL3NlYXJjaD9zZWFyY2hUZXJtPUtlbUAjJCUifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6673099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"5\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3900900,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"6\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6272699
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gc+G6o24gcGjhuqltIHbhu5tpIG3hu5l0IGvDvSB04buxIiwic2VhcmNoVGVybSI6IksiLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09SyJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5827099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"6\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5817999,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"7\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8145999
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gc+G6o24gcGjhuqltIGtow7RuZyB0cnV54buBbiB0aGFtIHPhu5EiLCJzZWFyY2hUZXJtIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9zZWFyY2gifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4870099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"7\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5166400,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +400\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"8\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7247700
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVMOsbSBraeG6v20gduG7m2kga8O9IHThu7EgdG/DoG4gc+G7kSIsInNlYXJjaFRlcm0iOjY1NjU2NTc0LCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09NjU2NTY1NzQifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4274400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"8\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5846299,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"9\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5980199
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVOG6pW4gY8O0bmcgU1FMIEluamVjdGlvbiB24bubaSB04burIGtow7NhIMSRxqFuIGdp4bqjbiIsInNlYXJjaFRlcm0iOiInIE9SICcxJz0nMSIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9zZWFyY2g/c2VhcmNoVGVybT0nIE9SICcxJz0nMSJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4196299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"9\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3845399,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-products;tìm-kiếm-sản-phẩm-theo-từ-khóa",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Tìm kiếm sản phẩm theo từ khóa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Tôi đã có dữ liệu Excel từ \"Search_Item\" ở hàng \"10\" cần tìm kiếm sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5204000
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiVOG6pW4gY8O0bmcgU1FMIEluamVjdGlvbiB24bubaSBuaGnhu4F1IHRoYW0gc+G7kSIsInNlYXJjaFRlcm0iOiInIFVOSU9OIFNFTEVDVCAqIEZST00gdXNlcnMgLS0iLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvc2VhcmNoP3NlYXJjaFRlcm09JyBVTklPTiBTRUxFQ1QgKiBGUk9NIHVzZXJzIC0tIn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/search\" để tìm kiếm sản phẩm theo từ khóa",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6612000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Search_Item\" ở hàng \"10\" ứng với từ khóa tìm kiếm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3755400,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Nếu thành công trạng thái phản hồi là 200, thì Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được tìm thấy theo từ khóa tìm kiếm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"40\" milliseconds cho mỗi Request mà tôi gửi đi để tìm kiếm sản phẩm.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\SearchProduct\\searchProduct.step.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-products",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Products",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\SearchProduct\\searchProduct.feature"
+  }
+]

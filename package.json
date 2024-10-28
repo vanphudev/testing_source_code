@@ -13,7 +13,7 @@
       "search": "cucumber-js --config src/configs/config.search.js",
       "rs": "node \"src/reports/Search/cucumber.report.js\"",
       "filter": "cucumber-js --config src/configs/config.filter.js",
-      "rf": "node \"src/reports/Filter/cucumber.report.js\"",
+      "rf": "node \"src/reports/FilterProduct/cucumber.report.js\"",
       "profile": "cucumber-js --config src/configs/config.profile.js",
       "rp": "node \"src/reports/User/cucumber.report.js\""
    },

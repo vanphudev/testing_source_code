@@ -1,0 +1,530 @@
+[
+  {
+    "description": "   Description: This feature will test the filter products API endpoint based on category ID.",
+    "elements": [
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"1\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59732600
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgbWFrZXVwIGPDsyB04buTbiB04bqhaSB0cm9uZyBo4buHIHRo4buRbmciLCJjYXRlZ29yeUlkIjoibWFrZXVwIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDAsIkRhdGEiOiJodHRwOi8vbG9jYWxob3N0OjU1NTUvYXBpL3YxL3Byb2R1Y3RzL2ZpbHRlcj9jYXRlZ29yeUlkPW1ha2V1cCJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69297400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"1\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 27924499,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"2\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25873000
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgc2tpbmNhcmUgY8OzIHThu5NuIHThuqFpIHRyb25nIGjhu4cgdGjhu5FuZyIsImNhdGVnb3J5SWQiOiJza2luY2FyZSIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9maWx0ZXI/Y2F0ZWdvcnlJZD1za2luY2FyZSJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10088399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"2\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5250000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"3\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7460599
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgcGh1LWtpZW4tbGFtLWRlcCBjw7MgdOG7k24gdOG6oWkgdHJvbmcgaOG7hyB0aOG7kW5nIiwiY2F0ZWdvcnlJZCI6InBodS1raWVuLWxhbS1kZXAiLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiRGF0YSI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTU1NS9hcGkvdjEvcHJvZHVjdHMvZmlsdGVyP2NhdGVnb3J5SWQ9cGh1LWtpZW4tbGFtLWRlcCJ9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9835399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"3\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5559399,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"4\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5770599
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgduG7m2kgZ2lhIHRy4buLIMSR4bqndSB2w6BvIGtow7RuZyB4w6l0IMSR4bq/biB0aGFtIHPhu5EgxJHhuqd1IHbDoG8iLCJjYXRlZ29yeUlkIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9maWx0ZXIifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7908400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"4\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5409499,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +400\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"5\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8559199
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgduG7m2kgZ2lhIHRy4buLIMSR4bqndSB2w6BvIGzDoCBnacOhIHRy4buLIHLhu5duZyIsImV4cGVjdGVkX3N0YXR1cyI6NDA0LCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9maWx0ZXI/Y2F0ZWdvcnlJZD0ifQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9299999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"5\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 739000
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgduG7m2kgZ2lhIHRy4buLIMSR4bqndSB2w6BvIGzDoCBnacOhIHRy4buLIHLhu5duZyIsImV4cGVjdGVkX3N0YXR1cyI6NDA0LCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9maWx0ZXI/Y2F0ZWdvcnlJZD0ifQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNA==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4971999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5413000
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaSBtb25nIG114buRbjogNTAgbWlsbGlzZWNvbmRz",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaSB0aOG7sWMgdOG6vzogOSBtaWxsaXNlY29uZHM=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter-products-by-category;lọc-sản-phẩm-theo-loại",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Lọc sản phẩm theo loại",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Tôi đã có dữ liệu Excel mã loại sản phẩm từ \"Filter_Category\" ở hàng \"6\" cần lọc theo loại sản phẩm đó",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7288500
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUcsaw4budbmcgaOG7o3AgIjoiS2nhu4NtIHRyYSBs4buNYyBz4bqjbiBwaOG6qW0gdGh14buZYyBsb+G6oWkgduG7m2kgZ2lhIHRy4buLIMSR4bqndSB2w6BvIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBo4buHIHRo4buRbmciLCJjYXRlZ29yeUlkIjoia2hvbmdfdG9uX3RhaSIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJEYXRhIjoiaHR0cDovL2xvY2FsaG9zdDo1NTU1L2FwaS92MS9wcm9kdWN0cy9maWx0ZXI/Y2F0ZWdvcnlJZD1raG9uZ190b25fdGFpIn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Tôi gửi yêu cầu HTTP GET đến \"/products/filter\" để lọc sản phẩm theo loại sản phẩm tương ứng",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6103900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ \"Filter_Category\" ở hàng \"6\" ứng với loại sản phẩm cần lọc",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6593599,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:49:37)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Tôi mong muốn kiểm tra dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin sản phẩm đã được lọc theo loại sản phẩm thành công.",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Tôi mong muốn mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds cho mỗi Request mà tôi gửi đi để lọc sản phẩm theo loại sản phẩm",
+            "match": {
+              "location": "src\\testUnits\\step_definitions\\FilterProduct\\filterProduct.step.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "filter-products-by-category",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Filter Products by Category",
+    "tags": [],
+    "uri": "src\\testUnits\\features\\FilterProduct\\filterProduct.feature"
+  }
+]

@@ -1,8 +1,8 @@
 module.exports = {
    default: {
       publish: true,
-      paths: ["src/tests/features/Checkout/*.feature"],
-      require: ["src/tests/step_definitions/Checkout/*.js", "src/hooks/common/*.js", "src/hooks/Checkout/*.js"],
+      paths: ["src/testUnits/features/Checkout/*.feature"],
+      require: ["src/testUnits/step_definitions/Checkout/*.js"],
       format: [
          "progress-bar",
          "html:src/reports/Checkout/cucumber-report.html",
