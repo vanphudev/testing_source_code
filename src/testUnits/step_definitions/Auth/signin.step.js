@@ -37,7 +37,7 @@ When("Tôi gửi yêu cầu đăng nhập theo giao thức Http POST đến endp
    try {
       const res = await chai.request(server).post(endpoint).send({email: this.email, password: this.password});
       this.response = res;
-      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response), "application/json");
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {

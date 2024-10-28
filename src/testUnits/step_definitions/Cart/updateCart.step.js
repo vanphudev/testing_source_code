@@ -48,7 +48,7 @@ When(
                productId: this.productId,
             });
          this.response = res;
-         this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response), "application/json");
+         this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
          const endTime = new Date().getTime();
          this.duration = endTime - startTime;
       } catch (err) {
