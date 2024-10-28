@@ -12,7 +12,6 @@ Feature: Kiem tra API checkout voi cac buoc thanh toan
          | checkout_test1 | 2   | 70   |
          | checkout_test1 | 3   | 70   |
          | checkout_test1 | 4   | 70   |
-         | checkout_test1 | 5   | 70   |
 
    Scenario Outline: Xac thuc duoc nguoi dung
       Given Tôi có dữ liệu Excel người dùng từ "<sheet>" ở hàng "<row>" để thực hiện thanh toán

@@ -22,9 +22,9 @@ Given(
    async function (sheetName, rowIndex) {
       this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
       if (this.rowData) {
-         this.client_id = this.rowData[1] === "null" ? null : this.rowData[1];
-         this.authorization = this.rowData[2] === "null" ? null : this.rowData[2];
-         this.expected_status = this.rowData[3] === "null" ? null : this.rowData[3];
+         this.client_id = this.rowData.client_id === "null" ? null : this.rowData.client_id;
+         this.authorization = this.rowData.authorization === "null" ? null : this.rowData.authorization;
+         this.expected_status = this.rowData.expected_status === "null" ? null : this.rowData.expected_status;
          this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
       } else {
          throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);

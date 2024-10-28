@@ -22,8 +22,8 @@ Given("Tôi có dữ liệu người dùng từ {string} ở hàng {string}", as
    this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
    console.log(this.rowData);
    if (this.rowData) {
-      this.client_id = this.rowData.Client_id === "null" ? null : this.rowData.Client_id;
-      this.authorization = this.rowData.Authorization === "null" ? null : this.rowData.Authorization;
+      this.client_id = this.rowData.client_id === "null" ? null : this.rowData.client_id;
+      this.authorization = this.rowData.authorization === "null" ? null : this.rowData.authorization;
       this.expected_status = this.rowData.expected_status === "null" ? null : this.rowData.expected_status;
       this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
    } else {
