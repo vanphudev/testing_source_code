@@ -38,6 +38,7 @@ When("Tôi gửi yêu cầu GET đến đường dẫn {string}", async function
          .set("authorization", this.authorization)
          .set("client_id", this.client_id);
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {

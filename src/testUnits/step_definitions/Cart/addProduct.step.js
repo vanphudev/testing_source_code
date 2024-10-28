@@ -48,6 +48,7 @@ When("Tôi gửi yêu cầu giao thức Http POST đến {string} với dữ li�
             quantity: this.quantity,
          });
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {

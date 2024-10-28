@@ -21,6 +21,7 @@ Given(
    "Tôi đã có dữ liệu Excel người dùng từ {string} ở hàng {string} cần xóa giỏ hàng",
    async function (sheetName, rowIndex) {
       this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
+      console.log(this.rowData);
       if (this.rowData) {
          this.client_id = this.rowData.client_id === "null" ? null : this.rowData.client_id;
          this.authorization = this.rowData.authorization === "null" ? null : this.rowData.authorization;
@@ -41,6 +42,7 @@ When("Tôi gửi yêu cầu HTTP DELETE đến {string} để xóa giỏ hàng c
          .set("authorization", this.authorization)
          .set("client_id", this.client_id);
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {
