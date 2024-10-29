@@ -67,6 +67,7 @@ When("Tôi gửi yêu cầu POST đến {string} để tạo đơn hàng", async
             note: this.note,
          });
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {

@@ -39,6 +39,7 @@ When("Tôi gửi yêu cầu POST đến {string} với client_id và authorizati
          client_id: this.client_id,
       });
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {

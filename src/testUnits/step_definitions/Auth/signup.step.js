@@ -41,6 +41,7 @@ When("Tôi gửi yêu cầu POST đến {string} với dữ liệu người dùn
          phone: this.phone,
       });
       this.response = res;
+      this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
       const endTime = new Date().getTime();
       this.duration = endTime - startTime;
    } catch (err) {
