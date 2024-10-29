@@ -20,11 +20,11 @@ async function readDataFromExcel(sheetName, rowIndex) {
 Given("Tôi có dữ liệu người dùng từ {string} ở hàng {string}", async function (sheetName, rowIndex) {
    this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
    if (this.rowData) {
-      this.email = this.rowData.email;
-      this.password = this.rowData.password;
-      this.phone = this.rowData.phone;
-      this.fullName = this.rowData.fullName;
-      this.expected_status = this.rowData.expected_status;
+      this.email = this.rowData.email === "null" ? null : this.rowData.email;
+      this.password = this.rowData.password === "null" ? null : this.rowData.password;
+      this.phone = this.rowData.phone === "null" ? null : this.rowData.phone;
+      this.fullName = this.rowData.fullName === "null" ? null : this.rowData.fullName;
+      this.expected_status = this.rowData.expected_status === "null" ? null : this.rowData.expected_status;
       this.attach("Dữ liệu người dùng từ file Excel: " + JSON.stringify(this.rowData), "application/json");
    } else {
       throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);

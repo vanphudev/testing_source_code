@@ -19,11 +19,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63726299
+              "duration": 60790300
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIG51bGwiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiJudWxsIiwicXVhbnRpdHkiOiJudWxsIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBudWxsLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IG51bGxcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGlkIHbDoCBz4buRIGzGsOG7o25nIGzDoCBudWxsIiwKICAiY2xpZW50X2lkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgImF1dGhvcml6YXRpb24iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLAogICJwcm9kdWN0SWQiOiAibnVsbCIsCiAgInF1YW50aXR5IjogIm51bGwiLAogICJleHBlY3RlZF9zdGF0dXMiOiA0MDAsCiAgImRhdGEiOiAie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogbnVsbCwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiBudWxsXHJcbn0iCn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwicHJvZHVjdElkIjpudWxsLCJxdWFudGl0eSI6bnVsbH0=",
                 "mime_type": "application/json"
               }
             ]
@@ -34,15 +38,15 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 44084799
+              "duration": 45583200
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4ifQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6ICJlcnJvciIsCiAgImNvZGUiOiA0MDAsCiAgIm1lc3NhZ2UiOiAiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4iCn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -53,15 +57,15 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"1\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 4261799
+              "duration": 5398199
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIG51bGwiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiJudWxsIiwicXVhbnRpdHkiOiJudWxsIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBudWxsLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IG51bGxcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGlkIHbDoCBz4buRIGzGsOG7o25nIGzDoCBudWxsIiwKICAiY2xpZW50X2lkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgImF1dGhvcml6YXRpb24iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLAogICJwcm9kdWN0SWQiOiAibnVsbCIsCiAgInF1YW50aXR5IjogIm51bGwiLAogICJleHBlY3RlZF9zdGF0dXMiOiA0MDAsCiAgImRhdGEiOiAie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogbnVsbCwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiBudWxsXHJcbn0iCn0=",
                 "mime_type": "application/json"
               },
               {
@@ -76,11 +80,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 2714100
+              "duration": 3423099
             }
           },
           {
@@ -89,15 +93,15 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 3848100
+              "duration": 4027999
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNDAgbWlsbGlzZWNvbmRz",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNDMgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -108,11 +112,11 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
               "status": "passed",
-              "duration": 3096400
+              "duration": 4879500
             }
           }
         ],
@@ -141,11 +145,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15906900
+              "duration": 21561500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIHLhu5duZyIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCIgXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogXCIgXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGlkIHbDoCBz4buRIGzGsOG7o25nIGzDoCBy4buXbmciLAogICJjbGllbnRfaWQiOiAiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwKICAiYXV0aG9yaXphdGlvbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIiBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiBcIiBcIlxyXG59Igp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjQwMH0=",
                 "mime_type": "application/json"
               }
             ]
@@ -156,15 +164,15 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 11459200
+              "duration": 11859500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4ifQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6ICJlcnJvciIsCiAgImNvZGUiOiA0MDAsCiAgIm1lc3NhZ2UiOiAiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4iCn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -175,15 +183,15 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"2\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 756300
+              "duration": 1587499
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gaWQgdsOgIHPhu5EgbMaw4bujbmcgbMOgIHLhu5duZyIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCIgXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogXCIgXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGlkIHbDoCBz4buRIGzGsOG7o25nIGzDoCBy4buXbmciLAogICJjbGllbnRfaWQiOiAiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwKICAiYXV0aG9yaXphdGlvbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIiBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiBcIiBcIlxyXG59Igp9",
                 "mime_type": "application/json"
               },
               {
@@ -198,11 +206,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 213300
+              "duration": 346599
             }
           },
           {
@@ -211,11 +219,11 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 408999
+              "duration": 867100
             },
             "embeddings": [
               {
@@ -230,11 +238,11 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
               "status": "passed",
-              "duration": 99399
+              "duration": 308999
             }
           }
         ],
@@ -263,11 +271,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8261000
+              "duration": 12717800
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCAwICIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsInF1YW50aXR5IjowLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMFxyXG59In0=",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGPDsyBpZCB04buTbiB04bqhaSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgMCAiLAogICJjbGllbnRfaWQiOiAiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwKICAiYXV0aG9yaXphdGlvbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsCiAgInByb2R1Y3RJZCI6ICI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLAogICJxdWFudGl0eSI6IDAsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IDBcclxufSIKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOjB9",
                 "mime_type": "application/json"
               }
             ]
@@ -278,15 +290,15 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 8301199
+              "duration": 10952499
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4ifQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6ICJlcnJvciIsCiAgImNvZGUiOiA0MDAsCiAgIm1lc3NhZ2UiOiAiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgYW5kIHF1YW50aXR5IGFyZSByZXF1aXJlZC4iCn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -297,15 +309,15 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"3\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1276899
+              "duration": 864299
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCAwICIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsInF1YW50aXR5IjowLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMFxyXG59In0=",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGPDsyBpZCB04buTbiB04bqhaSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgMCAiLAogICJjbGllbnRfaWQiOiAiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwKICAiYXV0aG9yaXphdGlvbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsCiAgInByb2R1Y3RJZCI6ICI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLAogICJxdWFudGl0eSI6IDAsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IDBcclxufSIKfQ==",
                 "mime_type": "application/json"
               },
               {
@@ -320,11 +332,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 87599
+              "duration": 173199
             }
           },
           {
@@ -333,15 +345,15 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 168699
+              "duration": 297399
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOCBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTEgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -352,11 +364,11 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
               "status": "passed",
-              "duration": 57299
+              "duration": 128699
             }
           }
         ],
@@ -385,11 +397,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9989000
+              "duration": 15579100
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCBo4bujcCBs4buHIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOjIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiAyXHJcbn0ifQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGPDsyBpZCB04buTbiB04bqhaSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgaOG7o3AgbOG7hyIsCiAgImNsaWVudF9pZCI6ICI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLAogICJhdXRob3JpemF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgInF1YW50aXR5IjogMiwKICAiZXhwZWN0ZWRfc3RhdHVzIjogMjAwLAogICJkYXRhIjogIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMlxyXG59Igp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOjJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -400,15 +416,15 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 20810200
+              "duration": 26801500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiSXRlbSBhZGRlZCB0byBjYXJ0IiwiZGF0YSI6eyJjYXJ0Ijp7Il9pZCI6IjY3MWZjN2NkZDQ4MTMwMTA1MGQ2Nzc3ZiIsInVzZXJJZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsIml0ZW1zIjpbeyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcxZmM5N2FkNDgxMzAxMDUwZDY3N2NmIn0seyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcxZmM5YWRkNDgxMzAxMDUwZDY3ODA3In0seyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcyMDBjYzU5NTVlMjJjZWNkZmYyZmQ1In0seyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcyMDBkMzc5NTVlMjJjZWNkZmYzMDE3In0seyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcyMDBlYTE5NTVlMjJjZWNkZmYzMDVlIn0seyJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJxdWFudGl0eSI6MiwiX2lkIjoiNjcyMDBmMjc5NTVlMjJjZWNkZmYzMGE4In1dLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjIyNloiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI4VDIyOjI0OjM5LjE2NFoiLCJfX3YiOjh9LCJ0b3RhbEl0ZW1zIjo2fX0=",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6IDIwMCwKICAibWVzc2FnZSI6ICJJdGVtIGFkZGVkIHRvIGNhcnQiLAogICJkYXRhIjogewogICAgImNhcnQiOiB7CiAgICAgICJfaWQiOiAiNjcyMDRhNmExMmI5ZjMwYzcwN2E0MDViIiwKICAgICAgInVzZXJJZCI6ICI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLAogICAgICAiaXRlbXMiOiBbCiAgICAgICAgewogICAgICAgICAgInByb2R1Y3RJZCI6ICI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLAogICAgICAgICAgInF1YW50aXR5IjogMiwKICAgICAgICAgICJfaWQiOiAiNjcyMDU1NTU2ZjQzY2E2OTcwMjRkYmM0IgogICAgICAgIH0KICAgICAgXSwKICAgICAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI5VDAyOjM3OjMwLjE0OVoiLAogICAgICAidXBkYXRlZEF0IjogIjIwMjQtMTAtMjlUMDM6MjQ6MDUuNjY2WiIsCiAgICAgICJfX3YiOiAyNAogICAgfSwKICAgICJ0b3RhbEl0ZW1zIjogMQogIH0KfQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -419,15 +435,15 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"4\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 485299
+              "duration": 883900
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nLCBz4bqjbiBwaOG6qW0gY8OzIGlkIHThu5NuIHThuqFpIHbDoCBz4buRIGzGsOG7o25nIGzDoCBo4bujcCBs4buHIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOjIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIiwgIFxyXG4gICAgXCJxdWFudGl0eVwiOiAyXHJcbn0ifQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZywgc+G6o24gcGjhuqltIGPDsyBpZCB04buTbiB04bqhaSB2w6Agc+G7kSBsxrDhu6NuZyBsw6AgaOG7o3AgbOG7hyIsCiAgImNsaWVudF9pZCI6ICI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLAogICJhdXRob3JpemF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgInF1YW50aXR5IjogMiwKICAiZXhwZWN0ZWRfc3RhdHVzIjogMjAwLAogICJkYXRhIjogIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMlxyXG59Igp9",
                 "mime_type": "application/json"
               },
               {
@@ -442,11 +458,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 1371499
+              "duration": 1810600
             }
           },
           {
@@ -455,15 +471,15 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 376200
+              "duration": 258100
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjAgbWlsbGlzZWNvbmRz",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjcgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -474,16 +490,15 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
-              "status": "failed",
-              "duration": 2890700,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -6\n    +1\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96:74)"
+              "status": "passed",
+              "duration": 838999
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzdmIiwKICAidXNlcklkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgICAgICJxdWFudGl0eSI6IDIsCiAgICAgICJfaWQiOiAiNjcxZmM5N2FkNDgxMzAxMDUwZDY3N2NmIgogICAgfSwKICAgIHsKICAgICAgInByb2R1Y3RJZCI6ICI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLAogICAgICAicXVhbnRpdHkiOiAyLAogICAgICAiX2lkIjogIjY3MWZjOWFkZDQ4MTMwMTA1MGQ2NzgwNyIKICAgIH0sCiAgICB7CiAgICAgICJwcm9kdWN0SWQiOiAiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwKICAgICAgInF1YW50aXR5IjogMiwKICAgICAgIl9pZCI6ICI2NzIwMGNjNTk1NWUyMmNlY2RmZjJmZDUiCiAgICB9LAogICAgewogICAgICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgICAgICJxdWFudGl0eSI6IDIsCiAgICAgICJfaWQiOiAiNjcyMDBkMzc5NTVlMjJjZWNkZmYzMDE3IgogICAgfSwKICAgIHsKICAgICAgInByb2R1Y3RJZCI6ICI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLAogICAgICAicXVhbnRpdHkiOiAyLAogICAgICAiX2lkIjogIjY3MjAwZWExOTU1ZTIyY2VjZGZmMzA1ZSIKICAgIH0sCiAgICB7CiAgICAgICJwcm9kdWN0SWQiOiAiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwKICAgICAgInF1YW50aXR5IjogMiwKICAgICAgIl9pZCI6ICI2NzIwMGYyNzk1NWUyMmNlY2RmZjMwYTgiCiAgICB9CiAgXSwKICAiY3JlYXRlZEF0IjogIjIwMjQtMTAtMjhUMTc6MjA6MTMuMjI2WiIsCiAgInVwZGF0ZWRBdCI6ICIyMDI0LTEwLTI4VDIyOjI0OjM5LjE2NFoiLAogICJfX3YiOiA4Cn0K",
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcyMDRhNmExMmI5ZjMwYzcwN2E0MDViIiwKICAidXNlcklkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgICAgICJxdWFudGl0eSI6IDIsCiAgICAgICJfaWQiOiAiNjcyMDU1NTU2ZjQzY2E2OTcwMjRkYmM0IgogICAgfQogIF0sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI5VDAyOjM3OjMwLjE0OVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOVQwMzoyNDowNS42NjZaIiwKICAiX192IjogMjQKfQo=",
                 "mime_type": "application/json"
               }
             ]
@@ -514,11 +529,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9215000
+              "duration": 15689200
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIHbhu5tpIDIgdGhhbSBz4buRIGNsaWVudF9pZCB2w6AgYXV0aG9yaXphdGlvbiBy4buXbmciLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDEiLCJxdWFudGl0eSI6MiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IDJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRo4bqldCBi4bqhaSB24bubaSAyIHRoYW0gc+G7kSBjbGllbnRfaWQgdsOgIGF1dGhvcml6YXRpb24gcuG7l25nIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMSIsCiAgInF1YW50aXR5IjogMiwKICAiZXhwZWN0ZWRfc3RhdHVzIjogNDA0LAogICJkYXRhIjogIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMlxyXG59Igp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJhdXRob3JpemF0aW9uIjoiIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDQsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMSIsInF1YW50aXR5IjoyfQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -529,13 +548,18 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
-              "status": "failed",
-              "duration": 1954399,
-              "error_message": "Error: TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value \"undefined\" for header \"authorization\"\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:55:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-            }
+              "status": "passed",
+              "duration": 9530200
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6ICJlcnJvciIsCiAgImNvZGUiOiA0MDQsCiAgIm1lc3NhZ2UiOiAiVGhhbSBz4buRIGNsaWVudF9pZCB2w6AgYXV0aG9yaXphdGlvbiBsw6AgYuG6r3QgYnXhu5ljIC0gY2xpZW50X2lkIGFuZCBhdXRob3JpemF0aW9uIGFyZSByZXF1aXJlZCIKfQ==",
+                "mime_type": "application/json"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -543,12 +567,22 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"5\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 552500
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRo4bqldCBi4bqhaSB24bubaSAyIHRoYW0gc+G7kSBjbGllbnRfaWQgdsOgIGF1dGhvcml6YXRpb24gcuG7l25nIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMSIsCiAgInF1YW50aXR5IjogMiwKICAiZXhwZWN0ZWRfc3RhdHVzIjogNDA0LAogICJkYXRhIjogIntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogMlxyXG59Igp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNA==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -556,11 +590,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 93399
             }
           },
           {
@@ -569,12 +603,18 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 226999
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOSBtaWxsaXNlY29uZHM=",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -582,11 +622,11 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 81299
             }
           }
         ],
@@ -615,11 +655,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7117399
+              "duration": 17651599
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIGPDsyB04buTbiB04bqhaSBwcm9kdWN0SWQgbmjGsG5nIHRow6ptIHRo4bqldCBi4bqhaSB2w6wgcXVhbnRpdHkgbmjhuq1wIHPhu5Egw6JtIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOi0yLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogLTJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZyBjw7MgdOG7k24gdOG6oWkgcHJvZHVjdElkIG5oxrBuZyB0aMOqbSB0aOG6pXQgYuG6oWkgdsOsIHF1YW50aXR5IG5o4bqtcCBz4buRIMOibSIsCiAgImNsaWVudF9pZCI6ICI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLAogICJhdXRob3JpemF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgInF1YW50aXR5IjogLTIsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IC0yXHJcbn0iCn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "S+G6v3QgcXXhuqMgZ2hpIG5o4bqtbiBzYXUga2hpIMSR4buNYzogeyJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOi0yfQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -630,15 +674,15 @@
             "line": 6,
             "name": "Tôi gửi yêu cầu giao thức Http POST đến \"/api/v1/carts/additem\" với dữ liệu Excel người dùng",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:38"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 12209800
+              "duration": 14839500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiU+G7kSBsxrDhu6NuZyBz4bqjbiBwaOG6qW0gcGjhuqNpIGzhu5tuIGjGoW4gMC4ifQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7CiAgInN0YXR1cyI6ICJlcnJvciIsCiAgImNvZGUiOiA0MDAsCiAgIm1lc3NhZ2UiOiAiU+G7kSBsxrDhu6NuZyBz4bqjbiBwaOG6qW0gcGjhuqNpIGzhu5tuIGjGoW4gMC4iCn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -649,15 +693,15 @@
             "line": 7,
             "name": "Tôi sẽ nhận được trạng thái phản hồi với expected_status từ \"Add_Item\" ở hàng \"6\"",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:59"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 448099
+              "duration": 484500
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIGPDsyB04buTbiB04bqhaSBwcm9kdWN0SWQgbmjGsG5nIHRow6ptIHRo4bqldCBi4bqhaSB2w6wgcXVhbnRpdHkgbmjhuq1wIHPhu5Egw6JtIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwicXVhbnRpdHkiOi0yLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCIsICBcclxuICAgIFwicXVhbnRpdHlcIjogLTJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogewogICJUw6puIFRIIjogIljDoWMgdGjhu7FjIG5nxrDhu51pIGTDuW5nIHRow6BuaCBjw7RuZyBjw7MgdOG7k24gdOG6oWkgcHJvZHVjdElkIG5oxrBuZyB0aMOqbSB0aOG6pXQgYuG6oWkgdsOsIHF1YW50aXR5IG5o4bqtcCBz4buRIMOibSIsCiAgImNsaWVudF9pZCI6ICI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLAogICJhdXRob3JpemF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwKICAicHJvZHVjdElkIjogIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsCiAgInF1YW50aXR5IjogLTIsCiAgImV4cGVjdGVkX3N0YXR1cyI6IDQwMCwKICAiZGF0YSI6ICJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiLCAgXHJcbiAgICBcInF1YW50aXR5XCI6IC0yXHJcbn0iCn0=",
                 "mime_type": "application/json"
               },
               {
@@ -672,11 +716,11 @@
             "line": 8,
             "name": "Nếu trạng thái phản hồi là 200, thì tôi sẽ nhận được dữ liệu giỏ hàng của người dùng sau khi thêm sản phẩm",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:68"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 69099
+              "duration": 120000
             }
           },
           {
@@ -685,15 +729,15 @@
             "line": 9,
             "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"50\" milliseconds",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:79"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 144400
+              "duration": 139400
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTIgbWlsbGlzZWNvbmRz",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTQgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -704,11 +748,11 @@
             "line": 10,
             "name": "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã thêm sản phẩm vào giỏ hàng thành công.",
             "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:84"
+              "location": "src\\testUnits\\step_definitions\\Cart\\addProduct.step.js:96"
             },
             "result": {
               "status": "passed",
-              "duration": 159399
+              "duration": 59700
             }
           }
         ],
@@ -748,11 +792,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14474900
+              "duration": 13280800
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIGdp4buPIGjDoG5nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIGdp4buPIGjDoG5nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDAsIl9fRU1QVFlfNSI6InMifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -767,7 +811,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28872200
+              "duration": 23569999
             },
             "embeddings": [
               {
@@ -786,11 +830,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3456899
+              "duration": 4779999
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIGdp4buPIGjDoG5nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDB9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIGdp4buPIGjDoG5nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDAsIl9fRU1QVFlfNSI6InMifQ==",
                 "mime_type": "application/json"
               },
               {
@@ -809,7 +853,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1407500
+              "duration": 2186999
             }
           },
           {
@@ -822,11 +866,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2394499
+              "duration": 3846000
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjcgbWlsbGlzZWNvbmRz",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMjAgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -841,7 +885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2529899
+              "duration": 4281500
             }
           }
         ],
@@ -865,7 +909,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9236200
+              "duration": 11494000
             },
             "embeddings": [
               {
@@ -884,7 +928,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9793300
+              "duration": 9174999
             },
             "embeddings": [
               {
@@ -903,7 +947,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 529299
+              "duration": 624900
             },
             "embeddings": [
               {
@@ -926,7 +970,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54599
+              "duration": 71200
             }
           },
           {
@@ -939,11 +983,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 256499
+              "duration": 535700
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOSBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOCBtaWxsaXNlY29uZHM=",
                 "mime_type": "text/plain"
               }
             ]
@@ -957,9 +1001,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:78"
             },
             "result": {
-              "status": "failed",
-              "duration": 484600,
-              "error_message": "AssertionError: expected 'error' to equal 200\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:82:61)"
+              "status": "passed",
+              "duration": 69899
             }
           }
         ],
@@ -983,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9773799
+              "duration": 10185699
             },
             "embeddings": [
               {
@@ -1002,7 +1045,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5021199
+              "duration": 5026699
             },
             "embeddings": [
               {
@@ -1021,7 +1064,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1009700
+              "duration": 301799
             },
             "embeddings": [
               {
@@ -1044,7 +1087,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73399
+              "duration": 44699
             }
           },
           {
@@ -1057,7 +1100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 174099
+              "duration": 108500
             },
             "embeddings": [
               {
@@ -1075,9 +1118,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:78"
             },
             "result": {
-              "status": "failed",
-              "duration": 359500,
-              "error_message": "AssertionError: expected 'error' to equal 200\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\clearCart.step.js:82:61)"
+              "status": "passed",
+              "duration": 34300
             }
           }
         ],
@@ -1091,445 +1133,6 @@
     "name": "Delete User Cart",
     "tags": [],
     "uri": "src\\testUnits\\features\\Cart\\clearCart.feature"
-  },
-  {
-    "description": "   Description: This feature will test the remove item from the user cart API endpoint.",
-    "elements": [
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"1\" cần xóa khỏi giỏ hàng của người dùng đó",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10782300
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbhu5tpIHZp4buHYyB4w7NhIG3hurd0IGjDoG5nIHbhu5tpIHByb2R1Y3RJZCBo4bujcCBs4buHIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfc3RhdHVzIjoyMDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23079700
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA0LCJtZXNzYWdlIjoiU+G6o24gcGjhuqltIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBnaeG7jyBow6BuZy4ifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"1\"",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:60"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 25545299,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:63:37)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:69"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:79"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:97"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"2\" cần xóa khỏi giỏ hàng của người dùng đó",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6192900
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIHbhu5tpIHZp4buHYyB4w7NhIG3hurd0IGjDoG5nIHbhu5tpIHByZHVjdElkIGtow7RuZyB04buTbiB04bqhaSIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsInByb2R1Y3RJZCI6InJmZHJnZmUzNTQzIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcInJmZHJnZmUzNTQzXCJcclxufSJ9",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15144000
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA0LCJtZXNzYWdlIjoiU+G6o24gcGjhuqltIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBnaeG7jyBow6BuZy4ifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"2\"",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:60"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 3792400,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +400\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:63:37)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:69"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:79"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:97"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"3\" cần xóa khỏi giỏ hàng của người dùng đó",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5514300
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MWU1MGUxMjEwZThjMjFhZjlmYjFmYSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOVEJsTVRJeE1HVTRZekl4WVdZNVptSXhabUVpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREUwUUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRFUxT1N3aVpYaHdJam94TnpNd01EUXdOems1ZlEuM1hYeVlHUWFQeGxvWktYcVRMb1hKV2VpMjRjXzd1SlhFWFQwM20xY0FBUSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5LCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7430699
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDE5LCJtZXNzYWdlIjoiQWNjZXNzIHRva2VuIGjhur90IGjhuqFuIC0gQWNjZXNzIHRva2VuIGV4cGlyZWQifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"3\"",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 270200
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MWU1MGUxMjEwZThjMjFhZjlmYjFmYSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOVEJsTVRJeE1HVTRZekl4WVdZNVptSXhabUVpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREUwUUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRFUxT1N3aVpYaHdJam94TnpNd01EUXdOems1ZlEuM1hYeVlHUWFQeGxvWktYcVRMb1hKV2VpMjRjXzd1SlhFWFQwM20xY0FBUSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5LCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1141099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:79"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 2048499,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'cart')\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:84:47)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:97"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "remove-cart-item;xóa-sản-phẩm-ra-khỏi-giỏ-hàng-của-người-dùng",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "Xóa sản phẩm ra khỏi giỏ hàng của người dùng",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Tôi đã có dữ liệu Excel người dùng, sản phẩm từ \"Remove_Item\" ở hàng \"4\" cần xóa khỏi giỏ hàng của người dùng đó",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6648700
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImNsaWVudF9pZCI6IjY0YjdkODg5MmY3OThiaG40NjRjMTUwMCIsImF1dGhvcml6YXRpb24iOiJraG9uZy10b24tdGFpIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Tôi gửi yêu cầu giao thức Http DELETE đến \"/api/v1/carts/removeitem\" với dữ liệu từ Excel người dùng cần xóa",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5380799
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA1LCJtZXNzYWdlIjoiS2jDtG5nIHTDrG0gdGjhuqV5IG5nxrDhu51pIGTDuW5nIHRyb25nIFRva2VuIC0gVXNlciBub3QgZm91bmQgaW4gVG9rZW4ifQ==",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Tôi nhận được trạng thái phản hồi khớp với expected_status từ \"Remove_Item\" ở hàng \"4\"",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 381899
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImNsaWVudF9pZCI6IjY0YjdkODg5MmY3OThiaG40NjRjMTUwMCIsImF1dGhvcml6YXRpb24iOiJraG9uZy10b24tdGFpIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNQ==",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Nếu trạng thái phản hồi là 200, tôi sẽ nhận được thông báo thành công về việc xóa sản phẩm khỏi giỏ hàng của người dùng",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 46800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "Tôi kiểm tra dữ liệu có đúng với định dạng JSON và kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa sản phẩm khỏi giỏ hàng thành công.",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:79"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 254299,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'cart')\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:84:47)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian \"70\" milliseconds cho mỗi Request",
-            "match": {
-              "location": "src\\testUnits\\step_definitions\\Cart\\deleteProduct.step.js:97"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "remove-cart-item",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Remove Cart Item",
-    "tags": [],
-    "uri": "src\\testUnits\\features\\Cart\\deleteProduct.feature"
   },
   {
     "description": "   Description: This feature will test the get user cart endpoint.",
@@ -1551,7 +1154,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7232999
+              "duration": 11202299
             },
             "embeddings": [
               {
@@ -1570,11 +1173,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14687899
+              "duration": 15634000
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzdmIiwidXNlcklkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjIyNloiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI4VDIyOjI0OjM5LjI2NloiLCJfX3YiOjl9LCJ0b3RhbEl0ZW1zIjowfX0=",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcyMDRhNmExMmI5ZjMwYzcwN2E0MDViIiwidXNlcklkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI5VDAyOjM3OjMwLjE0OVoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI5VDAzOjI0OjA1Ljc4MFoiLCJfX3YiOjI1fSwidG90YWxJdGVtcyI6MH19",
                 "mime_type": "application/json"
               }
             ]
@@ -1589,7 +1192,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3174499
+              "duration": 2381699
             },
             "embeddings": [
               {
@@ -1612,7 +1215,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 937599
+              "duration": 1450700
             }
           },
           {
@@ -1625,11 +1228,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1159999
+              "duration": 1000999
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzdmIiwKICAidXNlcklkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI4VDE3OjIwOjEzLjIyNloiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOFQyMjoyNDozOS4yNjZaIiwKICAiX192IjogOQp9Cg==",
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcyMDRhNmExMmI5ZjMwYzcwN2E0MDViIiwKICAidXNlcklkIjogIjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI5VDAyOjM3OjMwLjE0OVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOVQwMzoyNDowNS43ODBaIiwKICAiX192IjogMjUKfQo=",
                 "mime_type": "application/json"
               }
             ]
@@ -1644,7 +1247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1346900
+              "duration": 1142100
             }
           },
           {
@@ -1657,7 +1260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2061400
+              "duration": 2055900
             },
             "embeddings": [
               {
@@ -1687,7 +1290,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5568600
+              "duration": 12000900
             },
             "embeddings": [
               {
@@ -1706,11 +1309,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11550500
+              "duration": 11742600
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzhkIiwidXNlcklkIjoiNjcxZTUwMTYyMTBlOGMyMWFmOWZiMWRjIiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjU4MFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjU4MFoiLCJfX3YiOjB9LCJ0b3RhbEl0ZW1zIjowfX0=",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcyMDRiMmY1MTk5ZjBhMWMwYjg3OTQ2IiwidXNlcklkIjoiNjcxZTUwMTYyMTBlOGMyMWFmOWZiMWRjIiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI5VDAyOjQwOjQ3LjE3NloiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI5VDAyOjQwOjQ3LjE3NloiLCJfX3YiOjB9LCJ0b3RhbEl0ZW1zIjowfX0=",
                 "mime_type": "application/json"
               }
             ]
@@ -1725,7 +1328,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 796799
+              "duration": 516699
             },
             "embeddings": [
               {
@@ -1748,7 +1351,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 181100
+              "duration": 92100
             }
           },
           {
@@ -1761,11 +1364,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 199600
+              "duration": 124499
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzhkIiwKICAidXNlcklkIjogIjY3MWU1MDE2MjEwZThjMjFhZjlmYjFkYyIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI4VDE3OjIwOjEzLjU4MFoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOFQxNzoyMDoxMy41ODBaIiwKICAiX192IjogMAp9Cg==",
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcyMDRiMmY1MTk5ZjBhMWMwYjg3OTQ2IiwKICAidXNlcklkIjogIjY3MWU1MDE2MjEwZThjMjFhZjlmYjFkYyIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI5VDAyOjQwOjQ3LjE3NloiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOVQwMjo0MDo0Ny4xNzZaIiwKICAiX192IjogMAp9Cg==",
                 "mime_type": "application/json"
               }
             ]
@@ -1780,7 +1383,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 552300
+              "duration": 302200
             }
           },
           {
@@ -1793,7 +1396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 427200
+              "duration": 261200
             },
             "embeddings": [
               {
@@ -1823,7 +1426,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7605500
+              "duration": 6418400
             },
             "embeddings": [
               {
@@ -1842,11 +1445,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13853500
+              "duration": 10539099
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzkyIiwidXNlcklkIjoiNjcxZTUwMmMyMTBlOGMyMWFmOWZiMWUxIiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjYwOVoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI4VDE3OjIwOjEzLjYwOVoiLCJfX3YiOjB9LCJ0b3RhbEl0ZW1zIjowfX0=",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6MjAwLCJtZXNzYWdlIjoiQ2FydCBkZXRhaWwiLCJkYXRhIjp7ImNhcnQiOnsiX2lkIjoiNjcyMDRiMmY1MTk5ZjBhMWMwYjg3OTRiIiwidXNlcklkIjoiNjcxZTUwMmMyMTBlOGMyMWFmOWZiMWUxIiwiaXRlbXMiOltdLCJjcmVhdGVkQXQiOiIyMDI0LTEwLTI5VDAyOjQwOjQ3LjIwNFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEwLTI5VDAyOjQwOjQ3LjIwNFoiLCJfX3YiOjB9LCJ0b3RhbEl0ZW1zIjowfX0=",
                 "mime_type": "application/json"
               }
             ]
@@ -1861,7 +1464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 392599
+              "duration": 278400
             },
             "embeddings": [
               {
@@ -1884,7 +1487,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 102300
+              "duration": 91800
             }
           },
           {
@@ -1897,11 +1500,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106099
+              "duration": 127099
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcxZmM3Y2RkNDgxMzAxMDUwZDY3NzkyIiwKICAidXNlcklkIjogIjY3MWU1MDJjMjEwZThjMjFhZjlmYjFlMSIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI4VDE3OjIwOjEzLjYwOVoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOFQxNzoyMDoxMy42MDlaIiwKICAiX192IjogMAp9Cg==",
+                "data": "ROG7ryBsaeG7h3UgZ2nhu48gaMOgbmcgdHLhuqMgduG7gToKewogICJfaWQiOiAiNjcyMDRiMmY1MTk5ZjBhMWMwYjg3OTRiIiwKICAidXNlcklkIjogIjY3MWU1MDJjMjEwZThjMjFhZjlmYjFlMSIsCiAgIml0ZW1zIjogW10sCiAgImNyZWF0ZWRBdCI6ICIyMDI0LTEwLTI5VDAyOjQwOjQ3LjIwNFoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNC0xMC0yOVQwMjo0MDo0Ny4yMDRaIiwKICAiX192IjogMAp9Cg==",
                 "mime_type": "application/json"
               }
             ]
@@ -1916,7 +1519,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 370599
+              "duration": 271199
             }
           },
           {
@@ -1929,11 +1532,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106199
+              "duration": 160000
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTMgbWlsbGlzZWNvbmRz",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTEgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -1959,7 +1562,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5465300
+              "duration": 5763500
             },
             "embeddings": [
               {
@@ -1978,7 +1581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3522799
+              "duration": 4613299
             },
             "embeddings": [
               {
@@ -1997,7 +1600,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 345399
+              "duration": 345199
             },
             "embeddings": [
               {
@@ -2020,7 +1623,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64800
+              "duration": 40099
             }
           },
           {
@@ -2033,7 +1636,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26299
+              "duration": 25300
             }
           },
           {
@@ -2046,7 +1649,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20100
+              "duration": 41999
             }
           },
           {
@@ -2059,11 +1662,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 102800
+              "duration": 159400
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMyBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNSBtaWxsaXNlY29uZHM=",
                 "mime_type": "text/plain"
               }
             ]
@@ -2089,7 +1692,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5163199
+              "duration": 8093499
             },
             "embeddings": [
               {
@@ -2108,7 +1711,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7589199
+              "duration": 8796599
             },
             "embeddings": [
               {
@@ -2127,7 +1730,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 288499
+              "duration": 299600
             },
             "embeddings": [
               {
@@ -2150,7 +1753,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34099
+              "duration": 38300
             }
           },
           {
@@ -2163,7 +1766,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22400
+              "duration": 23599
             }
           },
           {
@@ -2176,7 +1779,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19900
+              "duration": 21700
             }
           },
           {
@@ -2189,7 +1792,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 83699
+              "duration": 97199
             },
             "embeddings": [
               {
@@ -2230,11 +1833,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9001899
+              "duration": 9933400
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbDoCB0xINuZyBz4bqjbiBwaOG6qW0gduG7m2kgcHJvZHVjdElkIHThu5NuIHThuqFpICIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbDoCB0xINuZyBz4bqjbiBwaOG6qW0gduG7m2kgcHJvZHVjdElkIHThu5NuIHThuqFpICIsImNsaWVudF9pZCI6IjY3MWU0ZmVkMjEwZThjMjFhZjlmYjFkNyIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOR1psWkRJeE1HVTRZekl4WVdZNVptSXhaRGNpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREF4UUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRE01TVN3aVpYaHdJam94TnpZeE5UazNPVGt4ZlEuQ0cxWE45U1FhbG1EY2hUUnoyb2FOcEVrNV9iU2lWc0NOMERGcGdWU1JmSSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwYiIsImV4cGVjdGVkX3N0YXR1cyI6MjAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
                 "mime_type": "application/json"
               }
             ]
@@ -2243,17 +1846,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 5371699
+              "duration": 14605699
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA0LCJtZXNzYWdlIjoiU+G6o24gcGjhuqltIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBnaeG7jyBow6BuZy4ifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -2268,8 +1871,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5091000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
+              "duration": 9058899,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
             }
           },
           {
@@ -2319,11 +1922,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6698699
+              "duration": 6739800
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBy4buXbmciLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiJcIiBcIiIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCIgXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBy4buXbmciLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJleHBlY3RlZF9zdGF0dXMiOjQwNCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiIFwiXHJcbn0ifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -2332,17 +1935,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 2863100
+              "duration": 8878600
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgaXMgcmVxdWlyZWQuIn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -2356,19 +1959,10 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 427200
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBy4buXbmciLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiJcIiBcIiIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCIgXCJcclxufSJ9",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwMA==",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "failed",
+              "duration": 4179300,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +404\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
+            }
           },
           {
             "arguments": [],
@@ -2379,8 +1973,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:69"
             },
             "result": {
-              "status": "passed",
-              "duration": 1170200
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -2392,15 +1986,9 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:81"
             },
             "result": {
-              "status": "passed",
-              "duration": 2367899
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMyBtaWxsaXNlY29uZHM=",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "skipped",
+              "duration": 0
+            }
           }
         ],
         "tags": [],
@@ -2423,11 +2011,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6879699
+              "duration": 6897299
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBudWxsIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogbnVsbFxyXG59In0=",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBudWxsIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDA0LCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogbnVsbFxyXG59In0=",
                 "mime_type": "application/json"
               }
             ]
@@ -2436,17 +2024,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 2267400
+              "duration": 10596999
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDAwLCJtZXNzYWdlIjoiTWlzc2luZyByZXF1aXJlZCBwYXJhbWV0ZXJzOiBwcm9kdWN0SWQgaXMgcmVxdWlyZWQuIn0=",
                 "mime_type": "application/json"
               }
             ]
@@ -2460,19 +2048,10 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 236499
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGzDoCBudWxsIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoibnVsbCIsImV4cGVjdGVkX3N0YXR1cyI6NDAwLCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogbnVsbFxyXG59In0=",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwMA==",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "failed",
+              "duration": 3525900,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +404\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
+            }
           },
           {
             "arguments": [],
@@ -2483,8 +2062,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:69"
             },
             "result": {
-              "status": "passed",
-              "duration": 46600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -2496,15 +2075,9 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:81"
             },
             "result": {
-              "status": "passed",
-              "duration": 289299
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMiBtaWxsaXNlY29uZHM=",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "skipped",
+              "duration": 0
+            }
           }
         ],
         "tags": [],
@@ -2527,11 +2100,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6451900
+              "duration": 7708799
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGtow7RuZyB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzFmZ3MiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxZmdzXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGtow7RuZyB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzFmZ3MiLCJleHBlY3RlZF9zdGF0dXMiOjQwNCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxZmdzXCJcclxufSJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -2540,17 +2113,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3188899
+              "duration": 9899300
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA0LCJtZXNzYWdlIjoiU+G6o24gcGjhuqltIGtow7RuZyB04buTbiB04bqhaSB0cm9uZyBnaeG7jyBow6BuZy4ifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -2565,15 +2138,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 241800
+              "duration": 320600
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGtow7RuZyB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzFmZ3MiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxZmdzXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgdMSDbmcgc+G6o24gcGjhuqltIHRow6wgcHJvZHVjdElkIGtow7RuZyB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzFmZ3MiLCJleHBlY3RlZF9zdGF0dXMiOjQwNCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxZmdzXCJcclxufSJ9",
                 "mime_type": "application/json"
               },
               {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwMA==",
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNA==",
                 "mime_type": "text/plain"
               }
             ]
@@ -2588,7 +2161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34499
+              "duration": 2021099
             }
           },
           {
@@ -2601,11 +2174,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86000
+              "duration": 2127199
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMyBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMTAgbWlsbGlzZWNvbmRz",
                 "mime_type": "text/plain"
               }
             ]
@@ -2631,7 +2204,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5968299
+              "duration": 7217000
             },
             "embeddings": [
               {
@@ -2644,17 +2217,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3865600
+              "duration": 8646300
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDE5LCJtZXNzYWdlIjoiQWNjZXNzIHRva2VuIGjhur90IGjhuqFuIC0gQWNjZXNzIHRva2VuIGV4cGlyZWQifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -2668,10 +2241,19 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:60"
             },
             "result": {
-              "status": "failed",
-              "duration": 2653699,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +419\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
-            }
+              "status": "passed",
+              "duration": 281799
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MWU1MGUxMjEwZThjMjFhZjlmYjFmYSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOVEJsTVRJeE1HVTRZekl4WVdZNVptSXhabUVpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREUwUUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRFUxT1N3aVpYaHdJam94TnpNd01EUXdOems1ZlEuM1hYeVlHUWFQeGxvWktYcVRMb1hKV2VpMjRjXzd1SlhFWFQwM20xY0FBUSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5LCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -2682,8 +2264,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:69"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 42000
             }
           },
           {
@@ -2695,9 +2277,15 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:81"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 303400
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOSBtaWxsaXNlY29uZHM=",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
@@ -2720,7 +2308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6458700
+              "duration": 7678899
             },
             "embeddings": [
               {
@@ -2733,17 +2321,17 @@
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/increaseQuantity\" với dữ liệu cập nhật số lượng sản phẩm là 1 trong giỏ hàng của người dùng",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 2978499
+              "duration": 4138099
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7fQ==",
+                "data": "ROG7ryBsaeG7h3UgcGjhuqNuIGjhu5NpOiB7InN0YXR1cyI6ImVycm9yIiwiY29kZSI6NDA1LCJtZXNzYWdlIjoiS2jDtG5nIHTDrG0gdGjhuqV5IG5nxrDhu51pIGTDuW5nIHRyb25nIFRva2VuIC0gVXNlciBub3QgZm91bmQgaW4gVG9rZW4ifQ==",
                 "mime_type": "application/json"
               }
             ]
@@ -2757,10 +2345,19 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:60"
             },
             "result": {
-              "status": "failed",
-              "duration": 2964399,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +405\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:63:37)"
-            }
+              "status": "passed",
+              "duration": 422800
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImNsaWVudF9pZCI6IjY0YjdkODg5MmY3OThiaG40NjRjMTUwMCIsImF1dGhvcml6YXRpb24iOiJraG9uZy10b24tdGFpIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -2771,8 +2368,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:69"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43499
             }
           },
           {
@@ -2784,9 +2381,15 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:81"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 97400
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogNCBtaWxsaXNlY29uZHM=",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
@@ -2809,11 +2412,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7977900
+              "duration": 8828600
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbDoCBnaeG6o20gc+G6o24gcGjhuqltIHbhu5tpIHByb2R1Y3RJZCB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDAiLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCJcclxufSJ9",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIHbDoCBnaeG6o20gc+G6o24gcGjhuqltIHbhu5tpIHByb2R1Y3RJZCB04buTbiB04bqhaSAiLCJjbGllbnRfaWQiOiI2NzFlNGZlZDIxMGU4YzIxYWY5ZmIxZDciLCJhdXRob3JpemF0aW9uIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOekZsTkdabFpESXhNR1U0WXpJeFlXWTVabUl4WkRjaUxDSmxiV0ZwYkNJNkluUmxjM1F1WlhoaGJYQnNaUzR3TURBeFFHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UY3pNREEwTURNNU1Td2laWGh3SWpveE56WXhOVGszT1RreGZRLkNHMVhOOVNRYWxtRGNoVFJ6Mm9hTnBFazVfYlNpVnNDTjBERnBnVlNSZkkiLCJwcm9kdWN0SWQiOiI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MGIiLCJleHBlY3RlZF9zdGF0dXMiOjIwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwXCJcclxufSJ9",
                 "mime_type": "application/json"
               }
             ]
@@ -2822,13 +2425,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 3856099
+              "duration": 14189699
             }
           },
           {
@@ -2841,8 +2444,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4875700,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:130:37)"
+              "duration": 5506599,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:130:37)"
             }
           },
           {
@@ -2892,11 +2495,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5519399
+              "duration": 5694299
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgZ2nhuqNtIHPhuqNuIHBo4bqpbSB0aMOsIHByb2R1Y3RJZCBsw6AgcuG7l25nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiXCIgXCIiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiIFwiXHJcbn0ifQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgZ2nhuqNtIHPhuqNuIHBo4bqpbSB0aMOsIHByb2R1Y3RJZCBsw6AgcuG7l25nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIiBcIlxyXG59In0=",
                 "mime_type": "application/json"
               }
             ]
@@ -2905,13 +2508,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 2343899
+              "duration": 8445399
             }
           },
           {
@@ -2924,11 +2527,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 718900
+              "duration": 566299
             },
             "embeddings": [
               {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgZ2nhuqNtIHPhuqNuIHBo4bqpbSB0aMOsIHByb2R1Y3RJZCBsw6AgcuG7l25nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiXCIgXCIiLCJleHBlY3RlZF9zdGF0dXMiOjQwMCwiZGF0YSI6IntcclxuICAgIFwicHJvZHVjdElkXCI6IFwiIFwiXHJcbn0ifQ==",
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgZ2nhuqNtIHPhuqNuIHBo4bqpbSB0aMOsIHByb2R1Y3RJZCBsw6AgcuG7l25nIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIiBcIlxyXG59In0=",
                 "mime_type": "application/json"
               },
               {
@@ -2947,7 +2550,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1434799
+              "duration": 1770600
             }
           },
           {
@@ -2960,11 +2563,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2285900
+              "duration": 2639799
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMiBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOCBtaWxsaXNlY29uZHM=",
                 "mime_type": "text/plain"
               }
             ]
@@ -2990,7 +2593,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5344900
+              "duration": 5464999
             },
             "embeddings": [
               {
@@ -3003,13 +2606,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 2228700
+              "duration": 7450499
             }
           },
           {
@@ -3022,7 +2625,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 214699
+              "duration": 257400
             },
             "embeddings": [
               {
@@ -3045,7 +2648,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36299
+              "duration": 31999
             }
           },
           {
@@ -3058,11 +2661,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 311299
+              "duration": 365700
             },
             "embeddings": [
               {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMiBtaWxsaXNlY29uZHM=",
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOCBtaWxsaXNlY29uZHM=",
                 "mime_type": "text/plain"
               }
             ]
@@ -3088,7 +2691,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013099
+              "duration": 5223300
             },
             "embeddings": [
               {
@@ -3101,13 +2704,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 2794799
+              "duration": 12368500
             }
           },
           {
@@ -3119,19 +2722,10 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:127"
             },
             "result": {
-              "status": "passed",
-              "duration": 321199
-            },
-            "embeddings": [
-              {
-                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjDoG5oIGPDtG5nIG5oxrBuZyB2aeG7h2MgZ2nhuqNtIHPhuqNuIHBo4bqpbSB0aMOsIHByb2R1Y3RJZCBraMO0bmcgdOG7k24gdOG6oWkgIiwiY2xpZW50X2lkIjoiNjcxZTRmZWQyMTBlOGMyMWFmOWZiMWQ3IiwiYXV0aG9yaXphdGlvbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTnpGbE5HWmxaREl4TUdVNFl6SXhZV1k1Wm1JeFpEY2lMQ0psYldGcGJDSTZJblJsYzNRdVpYaGhiWEJzWlM0d01EQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGN6TURBME1ETTVNU3dpWlhod0lqb3hOell4TlRrM09Ua3hmUS5DRzFYTjlTUWFsbURjaFRSejJvYU5wRWs1X2JTaVZzQ04wREZwZ1ZTUmZJIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxZmdzIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDAsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMWZnc1wiXHJcbn0ifQ==",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwMA==",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "failed",
+              "duration": 3838799,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +400\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:130:37)"
+            }
           },
           {
             "arguments": [],
@@ -3142,8 +2736,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:136"
             },
             "result": {
-              "status": "passed",
-              "duration": 42099
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -3155,15 +2749,9 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:148"
             },
             "result": {
-              "status": "passed",
-              "duration": 97400
-            },
-            "embeddings": [
-              {
-                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMiBtaWxsaXNlY29uZHM=",
-                "mime_type": "text/plain"
-              }
-            ]
+              "status": "skipped",
+              "duration": 0
+            }
           }
         ],
         "tags": [],
@@ -3186,7 +2774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4901599
+              "duration": 5762299
             },
             "embeddings": [
               {
@@ -3199,13 +2787,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 3450299
+              "duration": 8403800
             }
           },
           {
@@ -3217,10 +2805,19 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:127"
             },
             "result": {
-              "status": "failed",
-              "duration": 3546199,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +419\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:130:37)"
-            }
+              "status": "passed",
+              "duration": 258399
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgYXV0aG9yaXphdGlvbiBo4bq/dCBo4bqhbiIsImNsaWVudF9pZCI6IjY3MWU1MGUxMjEwZThjMjFhZjlmYjFmYSIsImF1dGhvcml6YXRpb24iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2lJMk56RmxOVEJsTVRJeE1HVTRZekl4WVdZNVptSXhabUVpTENKbGJXRnBiQ0k2SW5SbGMzUXVaWGhoYlhCc1pTNHdNREUwUUdkdFlXbHNMbU52YlNJc0ltbGhkQ0k2TVRjek1EQTBNRFUxT1N3aVpYaHdJam94TnpNd01EUXdOems1ZlEuM1hYeVlHUWFQeGxvWktYcVRMb1hKV2VpMjRjXzd1SlhFWFQwM20xY0FBUSIsInByb2R1Y3RJZCI6IjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMCIsImV4cGVjdGVkX3N0YXR1cyI6NDE5LCJkYXRhIjoie1xyXG4gICAgXCJwcm9kdWN0SWRcIjogXCI2NGI3ZDgwYzJmNzk4YmNhNDY0YzE1MDBcIlxyXG59In0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQxOQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -3231,8 +2828,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:136"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 46399
             }
           },
           {
@@ -3244,9 +2841,15 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:148"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 189899
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogOCBtaWxsaXNlY29uZHM=",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],
@@ -3269,7 +2872,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4955299
+              "duration": 5516800
             },
             "embeddings": [
               {
@@ -3282,13 +2885,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "Tôi gửi yêu cầu HTTP PUT đến \"<url>\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
+            "name": "Tôi gửi yêu cầu HTTP PUT đến \"/api/v1/carts/decreaseQuantity\" để giảm số lượng sản phẩm trong giỏ hàng của người dùng xuống 1",
             "match": {
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 2435400
+              "duration": 3822099
             }
           },
           {
@@ -3300,10 +2903,19 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:127"
             },
             "result": {
-              "status": "failed",
-              "duration": 3269999,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +405\n\n    at World.<anonymous> (E:\\HK7\\TESTER\\testing_source_code\\src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:130:37)"
-            }
+              "status": "passed",
+              "duration": 671800
+            },
+            "embeddings": [
+              {
+                "data": "ROG7ryBsaeG7h3UgxJHhu41jIHThu6sgZmlsZSBFeGNlbDogeyJUw6puIFRIIjoiWMOhYyB0aOG7sWMgbmfGsOG7nWkgZMO5bmcgdGjhuqV0IGLhuqFpIGtoaSAgY2xpZW50X2lkIGtow7RuZyB0w6xtIHRo4bqleSIsImNsaWVudF9pZCI6IjY0YjdkODg5MmY3OThiaG40NjRjMTUwMCIsImF1dGhvcml6YXRpb24iOiJraG9uZy10b24tdGFpIiwicHJvZHVjdElkIjoiNjRiN2Q4MGMyZjc5OGJjYTQ2NGMxNTAwIiwiZXhwZWN0ZWRfc3RhdHVzIjo0MDUsImRhdGEiOiJ7XHJcbiAgICBcInByb2R1Y3RJZFwiOiBcIjY0YjdkODBjMmY3OThiY2E0NjRjMTUwMFwiXHJcbn0ifQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "VHLhuqFuZyB0aMOhaSBwaOG6o24gaOG7k2k6IDQwNQ==",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -3314,8 +2926,8 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:136"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 93399
             }
           },
           {
@@ -3327,9 +2939,15 @@
               "location": "src\\testUnits\\step_definitions\\Cart\\updateCart.step.js:148"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
+              "status": "passed",
+              "duration": 142100
+            },
+            "embeddings": [
+              {
+                "data": "VGjhu51pIGdpYW4gdGjhu7FjIHRoaTogMyBtaWxsaXNlY29uZHM=",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
         "tags": [],

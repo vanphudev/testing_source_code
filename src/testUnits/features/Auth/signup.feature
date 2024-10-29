@@ -1,6 +1,6 @@
 Feature: Signup User
    Description: This feature will test the signup endpoint for creating a new user account.
-   Scenario Outline: Đăng ký tài khoản người dùng
+   Scenario Outline: Đăng ký tài khoản người dùng mới
       Given Tôi có dữ liệu người dùng từ "<sheet>" ở hàng "<row>"
       When Tôi gửi yêu cầu POST đến "/api/v1/user/signup" với dữ liệu người dùng
       Then Tôi sẽ nhận được trạng thái phản hồi mà endpoint API trả về khớp với expected_status từ "<sheet>" ở hàng "<row>" mà tôi mong muốn

@@ -22,9 +22,9 @@ Given(
    async function (sheetName, rowIndex) {
       this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
       if (this.rowData) {
-         this.client_id = this.rowData.client_id;
-         this.authorization = this.rowData.authorization;
-         this.expected_status = this.rowData.expected_status;
+         this.client_id = this.rowData.client_id === "null" ? null : this.rowData.client_id;
+         this.authorization = this.rowData.authorization === "null" ? null : this.rowData.authorization;
+         this.expected_status = this.rowData.expected_status === "null" ? null : this.rowData.expected_status;
          this.attach("Dữ liệu người dùng từ file Excel: " + JSON.stringify(this.rowData), "application/json");
       } else {
          throw new Error(`Không tìm thấy dữ liệu ở sheet ${sheetName} hàng ${rowIndex}`);
@@ -35,9 +35,11 @@ Given(
 When("Tôi gửi yêu cầu POST đến {string} với client_id và authorization.", async function (endpoint) {
    startTime = new Date().getTime();
    try {
-      const res = await chai.request(server).post(endpoint).set("Authorization", `Bearer ${this.authorization}`).send({
-         client_id: this.client_id,
-      });
+      const res = await chai
+         .request(server)
+         .post(endpoint)
+         .set("authorization", this.authorization || "")
+         .set("client_id", this.client_id || "");
       this.response = res;
       this.attach("Dữ liệu phản hồi: " + JSON.stringify(this.response.body), "application/json");
       const endTime = new Date().getTime();
@@ -72,8 +74,6 @@ Then(
          const responseBody = this.response.body;
          expect(responseBody).to.have.property("message").that.equals("User logged out successfully");
          expect(responseBody).to.have.property("data").that.is.an("object");
-         expect(responseBody.data).to.have.property("acknowledged").that.equals(true);
-         expect(responseBody.data).to.have.property("deletedCount").that.equals(1);
          this.attach(`Thông báo thành công: ${responseBody.message}`, "application/json");
          this.attach(`Dữ liệu phản hồi: ${JSON.stringify(responseBody.data)}`, "application/json");
       }

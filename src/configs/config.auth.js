@@ -2,7 +2,7 @@ module.exports = {
    default: {
       publish: true,
       paths: ["src/testUnits/features/Auth/*.feature"],
-      require: ["src/testUnits/step_definitions/Auth/*.js", "src/hooks/common/*.js", "src/hooks/Auth/*.js"],
+      require: ["src/testUnits/step_definitions/Auth/*.js"],
       format: [
          "progress-bar",
          "html:src/reports/Auth/cucumber-report.html",

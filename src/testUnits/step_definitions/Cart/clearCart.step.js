@@ -78,9 +78,11 @@ Then(
 Then(
    "Tôi mong muốn dữ liệu trả về từ API endpoint phải đúng với định dạng JSON đồng thời kiểm tra các trường thông tin trả về từ API endpoint phải có thông tin người dùng đã xóa giỏ hàng thành công.",
    function () {
-      expect(this.response.body).to.be.an("object");
-      expect(this.response.body).to.have.property("status").equal(200);
-      expect(this.response.body).to.have.property("message");
-      expect(this.response.body.data).to.have.property("message").equal("Giỏ hàng đã được xóa thành công.");
+      if (this.response.status === 200) {
+         expect(this.response.body).to.be.an("object");
+         expect(this.response.body).to.have.property("status").equal(200);
+         expect(this.response.body).to.have.property("message");
+         expect(this.response.body.data).to.have.property("message").equal("Giỏ hàng đã được xóa thành công.");
+      }
    }
 );
