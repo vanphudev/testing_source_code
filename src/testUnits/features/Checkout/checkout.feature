@@ -17,7 +17,7 @@ Feature: Kiem tra API checkout voi cac buoc thanh toan
       Given Tôi có dữ liệu Excel người dùng từ "<sheet>" ở hàng "<row>" để thực hiện thanh toán
       When Tôi gửi yêu cầu POST đến "/api/v1/orders/create" để tạo đơn hàng
       Then Tôi sẽ nhận được trạng thái phản hồi với expected_status từ "<sheet>" ở hàng "<row>" để kiểm tra
-      And Nếu trạng thái phản hồi là 200, thì tôi sẽ được phép thanh toán và yêu cầu xác thực thông tin người dùng
+      And Nếu trạng thái phản hồi là 201, thì tôi sẽ nhận được trạng thái phản hồi với thông tin đơn hàng đã được tạo thành công
       And Dữ liệu trả về có đúng với định dạng JSON và thông tin người dùng đã được xác thực
       And Tôi mong muốn kiểm tra mỗi Request chỉ chấp nhận trong thời gian "<time>" milliseconds để kiểm tra
       Examples:

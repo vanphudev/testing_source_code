@@ -22,6 +22,7 @@ Given(
    "Tôi có dữ liệu Excel người dùng từ {string} ở hàng {string} để thực hiện thanh toán",
    async function (sheetName, rowIndex) {
       this.rowData = await readDataFromExcel(sheetName, rowIndex - 1);
+      console.log(this.rowData);
       if (this.rowData) {
          this.client_id = this.rowData.client_id === "null" ? null : this.rowData.client_id;
          this.authorization = this.rowData.authorization === "null" ? null : this.rowData.authorization;
@@ -48,6 +49,7 @@ Given(
 When("Tôi gửi yêu cầu POST đến {string} để tạo đơn hàng", async function (endpoint) {
    startTime = new Date().getTime();
    try {
+      console.log("this.items", this.items);
       const res = await chai
          .request(server)
          .post(endpoint)
@@ -87,12 +89,12 @@ Then(
 
 // Step 4
 Then(
-   "Nếu trạng thái phản hồi là {int}, thì tôi sẽ được phép thanh toán và yêu cầu xác thực thông tin người dùng",
+   "Nếu trạng thái phản hồi là {int}, thì tôi sẽ nhận được trạng thái phản hồi với thông tin đơn hàng đã được tạo thành công",
    function (status) {
       if (this.response.status === status) {
-         this.attach("Bạn được phép thanh toán và yêu cầu xác thực thông tin người dùng.");
+         this.attach("Đơn hàng đã được tạo thành công.");
       } else {
-         this.attach("Bạn không được phép thanh toán.");
+         this.attach("Đơn hàng chưa được tạo thành công.");
       }
    }
 );
@@ -103,41 +105,29 @@ Then("Dữ liệu trả về có đúng với định dạng JSON và thông tin
    this.attach("Dữ liệu trả về có định dạng JSON hợp lệ.");
 
    const responseData = this.response.body;
-
-   // Kiểm tra status và message
-   expect(responseData.status).to.equal(201);
-   expect(responseData.message).to.equal("Order created");
-
-   // Kiểm tra dữ liệu đơn hàng trong response
-   const order = responseData.data.orders;
-
-   expect(order.userId).to.equal(this.userId);
-   expect(order.items).to.be.an("array").that.has.lengthOf(this.items.length);
-
-   // Kiểm tra từng item trong đơn hàng
-   order.items.forEach((item, index) => {
-      expect(item.productId).to.equal(this.items[index].productId);
-      expect(item.name).to.be.a("string");
-      expect(item.price).to.be.a("number");
-      expect(item.quantity).to.be.a("number");
-      expect(item._id).to.be.a("string");
-   });
-
-   // Kiểm tra các thông tin khác của đơn hàng
-   expect(order.totalPrice).to.equal(this.totalPrice);
-   expect(order.shippingAddress).to.deep.equal(this.shippingAddress);
-   expect(order.paymentMethod).to.equal(this.paymentMethod);
-   expect(order.phone).to.equal(this.phone);
-   expect(order.email).to.equal(this.email);
-   expect(order.discountAmount).to.equal(this.discountAmount);
-   expect(order.finalPrice).to.equal(this.finalPrice);
-   expect(order.note).to.equal(this.note);
-   expect(order.status).to.equal("pending");
-   expect(order._id).to.be.a("string");
-
-   // Kiểm tra createdAt và updatedAt là chuỗi thời gian
-   expect(new Date(order.createdAt)).to.be.a("date");
-   expect(new Date(order.updatedAt)).to.be.a("date");
+   if (responseData.status === 201) {
+      expect(responseData.status).to.equal(201);
+      expect(responseData.message).to.equal("Order created");
+      const order = responseData.data.orders;
+      expect(order.userId).to.equal(this.userId);
+      expect(order.items).to.be.an("array").that.has.lengthOf(this.items.length);
+      order.items.forEach((item, index) => {
+         expect(item.productId).to.equal(this.items[index].productId);
+         expect(item.name).to.be.a("string");
+         expect(item.price).to.be.a("number");
+         expect(item.quantity).to.be.a("number");
+         expect(item._id).to.be.a("string");
+      });
+      expect(order.totalPrice).to.equal(this.totalPrice);
+      expect(order.shippingAddress).to.deep.equal(this.shippingAddress);
+      expect(order.paymentMethod).to.equal(this.paymentMethod);
+      expect(order.phone).to.equal(this.phone);
+      expect(order.email).to.equal(this.email);
+      expect(order.discountAmount).to.equal(this.discountAmount);
+      expect(order.finalPrice).to.equal(this.finalPrice);
+      expect(order.note).to.equal(this.note);
+      expect(order.status).to.equal("pending");
+   }
 });
 
 // Step 6

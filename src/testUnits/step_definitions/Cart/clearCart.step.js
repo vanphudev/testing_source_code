@@ -53,7 +53,7 @@ When("Tôi gửi yêu cầu HTTP DELETE đến {string} để xóa giỏ hàng c
 Then(
    "Tôi phải nhận được trạng thái phản hồi khớp với expected_status từ {string} ở hàng {string} ứng với giỏ hàng cần xóa của người dùng",
    async function (sheetName, rowIndex) {
-      expect(this.response).to.have.status(parseInt(this.expected_status));
+      expect(this.response).to.have.status(this.expected_status);
       this.attach("Dữ liệu đọc từ file Excel: " + JSON.stringify(this.rowData), "application/json");
       this.attach(`Trạng thái phản hồi: ${this.response.status}`);
    }

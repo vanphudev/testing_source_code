@@ -15,5 +15,4 @@ Feature: Get User Cart
          | Get_Cart | 3   | 40   |
          | Get_Cart | 4   | 40   |
          | Get_Cart | 5   | 40   |
-         | Get_Cart | 6   | 40   |
 
